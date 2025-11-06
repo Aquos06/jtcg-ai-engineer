@@ -4,4 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "jieba>=0.42.1",
+    "llama-index>=0.14.7",
+    "llama-index-core>=0.14.7",
+    "llama-index-vector-stores-milvus>=0.9.3",
+    "llama-index-workflows>=2.11.0",
+    "pandas>=2.2.3",
+    "pymilvus>=2.6.3",
+]
