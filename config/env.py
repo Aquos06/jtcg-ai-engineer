@@ -1,0 +1,12 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MILVUS_URL=os.getenv("MILVUS_URL")
+EMBED_DIM=int(os.getenv("EMBED_DIM"))
+OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL=os.getenv("OPENAI_MODEL")
+OPENAI_MODEL_SMALL=os.getenv("OPENAI_MODEL_SMALL")
+OPENAI_EMBEDDING_MODEL=os.getenv("OPENAI_EMBEDDING_MODEL")
+COLLECTION_NAME=os.getenv("COLLECTION_NAME")

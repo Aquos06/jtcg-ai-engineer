@@ -1,0 +1,268 @@
+{
+   "brand": "JTCG Shop",
+   "generated_at": "2025-08-15T07:00:00Z",
+   "orders_db": {
+      "u_123456": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-10001",
+               "placed_at": "2025-08-10T03:33:00Z",
+               "status": "in_transit",
+               "carrier": "DHL",
+               "tracking": "DHL1234567",
+               "eta": "2025-08-16",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-DUAL-PRO-32",
+                     "name": "JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋）",
+                     "qty": 1
+                  },
+                  {
+                     "sku": "JTCG-CABLE-MGMT-KIT",
+                     "name": "JTCG 桌面走線管理組",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "台北市信義區松高路 100 號 10 樓",
+               "contact_phone": "0912-345-678",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-10001"
+            },
+            {
+               "order_id": "JTCG-202507-09012",
+               "placed_at": "2025-07-22T08:15:00Z",
+               "status": "delivered",
+               "carrier": "T-EX",
+               "tracking": "TEX998877",
+               "eta": "2025-07-26",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-SINGLE-LITE-27",
+                     "name": "JTCG 單臂支架 Lite（至 27 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "新北市板橋區文化路一段 200 號 7 樓",
+               "contact_phone": "0922-000-111",
+               "order_url": "https://example.com/jtcg/o/JTCG-202507-09012"
+            }
+         ]
+      },
+      "u_999999": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-11021",
+               "placed_at": "2025-08-12T10:02:00Z",
+               "status": "processing",
+               "carrier": null,
+               "tracking": null,
+               "eta": null,
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-ULTRAWIDE-49",
+                     "name": "JTCG 超寬螢幕重載臂（至 49 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "高雄市鼓山區明誠三路 88 號 3 樓",
+               "contact_phone": "0933-222-333",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-11021"
+            }
+         ]
+      },
+      "u_empty": {
+         "orders": []
+      },
+      "u_222222": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-12005",
+               "placed_at": "2025-08-12T14:20:00Z",
+               "status": "shipped",
+               "carrier": "T-EX",
+               "tracking": "TEX112233",
+               "eta": "2025-08-17",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-ULTRAWIDE-49",
+                     "name": "JTCG 超寬螢幕重載臂（至 49 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "桃園市中壢區中大路 59 號 5 樓",
+               "contact_phone": "0918-111-222",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-12005"
+            },
+            {
+               "order_id": "JTCG-202506-05077",
+               "placed_at": "2025-06-05T03:10:00Z",
+               "status": "delivered",
+               "carrier": "DHL",
+               "tracking": "DHL556677",
+               "eta": "2025-06-10",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-SINGLE-LITE-27",
+                     "name": "JTCG 單臂支架 Lite（至 27 吋）",
+                     "qty": 1
+                  },
+                  {
+                     "sku": "JTCG-CABLE-MGMT-KIT",
+                     "name": "JTCG 桌面走線管理組",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "桃園市平鎮區新富三街 88 號 9 樓",
+               "contact_phone": "0909-333-444",
+               "order_url": "https://example.com/jtcg/o/JTCG-202506-05077"
+            }
+         ]
+      },
+      "u_333333": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-14011",
+               "placed_at": "2025-08-14T09:45:00Z",
+               "status": "processing",
+               "carrier": null,
+               "tracking": null,
+               "eta": null,
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-DUAL-PRO-32",
+                     "name": "JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "台中市西屯區文心路三段 300 號 12 樓",
+               "contact_phone": "0966-000-555",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-14011"
+            },
+            {
+               "order_id": "JTCG-202507-30021",
+               "placed_at": "2025-07-30T12:05:00Z",
+               "status": "delivered",
+               "carrier": "T-EX",
+               "tracking": "TEX445566",
+               "eta": "2025-08-03",
+               "items": [
+                  {
+                     "sku": "JTCG-WALL-ARM-34",
+                     "name": "JTCG 壁掛式伸縮臂（至 34 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "台中市北屯區松竹路二段 120 號 6 樓",
+               "contact_phone": "0955-121-212",
+               "order_url": "https://example.com/jtcg/o/JTCG-202507-30021"
+            }
+         ]
+      },
+      "u_444444": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-09031",
+               "placed_at": "2025-08-09T07:22:00Z",
+               "status": "in_transit",
+               "carrier": "BlackCat",
+               "tracking": "BC123456789",
+               "eta": "2025-08-15",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-SINGLE-LITE-27",
+                     "name": "JTCG 單臂支架 Lite（至 27 吋）",
+                     "qty": 1
+                  },
+                  {
+                     "sku": "JTCG-LAPTOP-VESA-KIT",
+                     "name": "JTCG 筆電托盤＋VESA 轉接組",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "新竹市東區光復路二段 101 號 4 樓",
+               "contact_phone": "0932-777-888",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-09031"
+            }
+         ]
+      },
+      "u_555555": {
+         "orders": [
+            {
+               "order_id": "JTCG-202508-01041",
+               "placed_at": "2025-08-01T11:33:00Z",
+               "status": "delivered",
+               "carrier": "DHL",
+               "tracking": "DHL888999",
+               "eta": "2025-08-06",
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-DUAL-PRO-32",
+                     "name": "JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "台南市東區崇學路 66 號 10 樓",
+               "contact_phone": "0977-333-222",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-01041"
+            },
+            {
+               "order_id": "JTCG-202507-28052",
+               "placed_at": "2025-07-28T15:18:00Z",
+               "status": "processing",
+               "carrier": null,
+               "tracking": null,
+               "eta": null,
+               "items": [
+                  {
+                     "sku": "JTCG-CABLE-MGMT-KIT",
+                     "name": "JTCG 桌面走線管理組",
+                     "qty": 2
+                  }
+               ],
+               "shipping_address": "台南市北區成功路 200 號 3 樓",
+               "contact_phone": "0988-654-321",
+               "order_url": "https://example.com/jtcg/o/JTCG-202507-28052"
+            }
+         ]
+      },
+      "u_777777": {
+         "orders": [
+            {
+               "order_id": "JTCG-202505-21073",
+               "placed_at": "2025-05-21T02:20:00Z",
+               "status": "delivered",
+               "carrier": "T-EX",
+               "tracking": "TEX223344",
+               "eta": "2025-05-26",
+               "items": [
+                  {
+                     "sku": "JTCG-WALL-ARM-34",
+                     "name": "JTCG 壁掛式伸縮臂（至 34 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "高雄市左營區自由一路 150 號 8 樓",
+               "contact_phone": "0910-888-000",
+               "order_url": "https://example.com/jtcg/o/JTCG-202505-21073"
+            },
+            {
+               "order_id": "JTCG-202508-15083",
+               "placed_at": "2025-08-15T04:12:00Z",
+               "status": "processing",
+               "carrier": null,
+               "tracking": null,
+               "eta": null,
+               "items": [
+                  {
+                     "sku": "JTCG-ARM-ULTRAWIDE-49",
+                     "name": "JTCG 超寬螢幕重載臂（至 49 吋）",
+                     "qty": 1
+                  }
+               ],
+               "shipping_address": "高雄市鼓山區青海路 88 號 15 樓",
+               "contact_phone": "0935-101-202",
+               "order_url": "https://example.com/jtcg/o/JTCG-202508-15083"
+            }
+         ]
+      }
+   }
+}
