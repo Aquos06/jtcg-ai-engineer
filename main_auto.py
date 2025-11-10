@@ -5,7 +5,8 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core.workflow import Context
 
 from config.env import OPENAI_MODEL
-from agent.agent import CRMAgent
+from agent.event import StreamEvent
+from agent.agent_auto import CRMAutoAgent
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -23,8 +24,9 @@ async def main():
         return
 
     conversation_id = f"JTCG-CHAT-{uuid.uuid4()}"
-    agent = CRMAgent(
+    agent = CRMAutoAgent(
         llm=llm,
+        conversation_id=conversation_id
     )
     
     # --- Chat Loop ---
@@ -33,14 +35,6 @@ async def main():
     print("Type 'exit' or 'quit' to end the chat.")
     
     context = Context(agent)
-    await context.store.set("conversation_id", conversation_id)
-    await context.store.set("history", [])
-    await context.store.set("user_id", None)
-    await context.store.set("order_id", None)
-    await context.store.set("email", None)
-    await context.store.set("waiting_for", None)
-    await context.store.set("language", "en")
-    
     while True:
         try:
             user_input = input("\nUser: ")
@@ -48,11 +42,8 @@ async def main():
                 print("Agent: Goodbye!")
                 break
                 
-            result = await agent.run(input=user_input, ctx=context)
-            print(f"\nIntent: {result['intent']}")
-            print(f"\nTool: {result['tools']}")
-            print(f"\nAgent: {result['message']}")
-
+            handler = await agent.run(input=user_input, ctx=context)
+            print(f"Agent: {handler['response']}")
 
         except KeyboardInterrupt:
             print("\nAgent: Goodbye!")
