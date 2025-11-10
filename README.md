@@ -58,7 +58,7 @@ The output/ folder contains the results from my evaluation runs:
 
 # Explanation
 
-## 1. Executive Summary: The Paradox of Control
+## 1. Summary
 
 I developed and evaluated two distinct agent architectures to fulfill the CRM Agent requirements:
 
@@ -76,7 +76,7 @@ To test both, I ran an automated evaluation against a 323-item test set. The res
 | **GPT-4o-mini** | **65.94%** | 63.16% |
 | **GPT-4o-nano** | **58.51%** | 56.97% |
 
-This essay will analyze *why* the `AUTO` agent won this specific "sprint," and why, despite this data, the **`INTENT` (Workflow) agent is the correct and fundamentally superior architecture** for a reliable, production-ready system.
+[Notes: this result can be seen in 'output/reliability_results_agent_intent_*.csv']
 
 ---
 
