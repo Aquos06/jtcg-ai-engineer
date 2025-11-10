@@ -10,8 +10,8 @@ from llama_index.core.workflow import Context, StartEvent, StopEvent, Workflow, 
 
 from agent.tools import search_knowledge_base, product_search, get_orders_by_user, get_order_details, create_support_ticket
 from agent.schemas import ToolName, AgentIntent, UserIntent
-from agent.const import JTCG_SYSTEM_PROMPT, ASK_FOR_INFO_PROMPT, INTENT_ROUTER_PROMPT
-from agent.event import OrderEvent, ProductEvent, HandoverEvent, AskForInfoEvent, GeneralResponseEvent, FAQEvent, RouterEvent
+from agent.const import JTCG_SYSTEM_PROMPT, ASK_FOR_INFO_PROMPT, INTENT_ROUTER_PROMPT, REJECT_AND_REDIRECT_PROMPT
+from agent.event import OrderEvent, ProductEvent, HandoverEvent, AskForInfoEvent, GeneralResponseEvent, FAQEvent, RouterEvent, RejectEvent
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -25,8 +25,6 @@ class CRMAgent(Workflow):
     ) -> None:
         super().__init__(*args, **kwargs)
         self.llm = llm
-        self.current_message_id = str(uuid4())
-        self.parent_message_id = None
 
         self.tools = {
             ToolName.SEARCH_KNOWLEDGE_BASE: search_knowledge_base,
@@ -35,6 +33,8 @@ class CRMAgent(Workflow):
             ToolName.GET_ORDER_DETAILS: get_order_details,
             ToolName.CREATE_SUPPORT_TICKET: create_support_ticket
         }
+        self.tools_called: List[ToolName] = []
+        self.intent = ""
 
     async def _get_chat_history(self, ctx: Context) -> List[ChatMessage]:
         history:list = await ctx.store.get("history", default=[])
@@ -60,9 +60,7 @@ class CRMAgent(Workflow):
         """
         
         tool_call_id = f"call_{str(uuid4())}"[:30]
-        tool_name = tool_name.value
-        print(f'Tool Name: {tool_name}, {type(tool_name)}')
-
+        self.tools_called.append(tool_name)
         assistant_tool_call_msg = ChatMessage(
             role=MessageRole.ASSISTANT,
             content=None,
@@ -119,48 +117,35 @@ class CRMAgent(Workflow):
         strucured_llm = self.llm.as_structured_llm(
             AgentIntent,
         )
-        messages=chat_history + [ChatMessage(role=MessageRole.SYSTEM, content=prompt)]
+        messages= [ChatMessage(role=MessageRole.SYSTEM, content=prompt)] + chat_history
         response = strucured_llm.chat(messages=messages)
         
         await ctx.store.set("intent_plan", response)
 
         response_raw = response.raw
-        if not response_raw.entities:
-            response_raw.entities = {}
-        
         return RouterEvent(input=response_raw)
 
     @step
-    async def router_step(self, ctx: Context, ev: RouterEvent) -> Union[AskForInfoEvent, OrderEvent, FAQEvent, AskForInfoEvent, ProductEvent, HandoverEvent, GeneralResponseEvent]:
+    async def router_step(self, ctx: Context, ev: RouterEvent) -> Union[AskForInfoEvent, OrderEvent, FAQEvent, AskForInfoEvent, ProductEvent, HandoverEvent, GeneralResponseEvent, RejectEvent]:
         """
         Step 2: "Python Logic Router."
         """
         plan: AgentIntent = ev.input
         await ctx.store.set("language", plan.language) 
-        print(f"PLAN: {plan}")
 
-        if "user_id" in plan.entities:
-            await ctx.store.set("user_id", plan.entities["user_id"])
-        if "order_id" in plan.entities:
-            await ctx.store.set("order_id", plan.entities["order_id"])
-        if "email" in plan.entities:
-            await ctx.store.set("email", plan.entities["email"])
+        if plan.entities.user_id:
+            await ctx.store.set("user_id", plan.entities.user_id)
+        if plan.entities.order_id:
+            await ctx.store.set("order_id", plan.entities.order_id)
+        if plan.entities.email:
+            await ctx.store.set("email", plan.entities.email)
         
-        waiting_for = await ctx.store.get("waiting_for", default=None)
-        if plan.intent == "providing_info" and waiting_for:
-            last_message = (await self._get_chat_history(ctx))[-1].content
-            await ctx.store.set(waiting_for, last_message.strip()) 
-            await ctx.store.set("waiting_for", None)
+        self.intent = plan.intent
+        if self.intent == UserIntent.REJECT_REQUEST:
+            logger.info("Routing to Reject Request Worker.")
+            return RejectEvent(input=plan)
         
-        intent = plan.intent
-        
-        if plan.intent == "providing_info":
-            if waiting_for == "user_id" or waiting_for == "order_id":
-                intent = "order_status"
-            if waiting_for == "email":
-                intent = "human_handover"
-        
-        if intent == "order_status":
+        if self.intent == UserIntent.ORDER_INFO:
             user_id = await ctx.store.get("user_id", default=None)
             order_id = await ctx.store.get("order_id", default=None)
             
@@ -172,13 +157,13 @@ class CRMAgent(Workflow):
             
             return OrderEvent(run_tool=ToolName.GET_ORDER_DETAILS)
             
-        if intent == "product_search":
+        if self.intent == UserIntent.PRODUCT_SEARCH:
             return ProductEvent(input=plan) 
             
-        if intent == "faq":
+        if self.intent == UserIntent.FAQ:
             return FAQEvent(input=plan)
             
-        if intent == "human_handover":
+        if self.intent == UserIntent.HUMAN_HANDOVER:
             email = await ctx.store.get("email", default=None)
             if not email:
                 await ctx.store.set("waiting_for", "email")
@@ -186,6 +171,35 @@ class CRMAgent(Workflow):
             return HandoverEvent(input=plan)
 
         return GeneralResponseEvent(input=plan)
+    
+    @step
+    async def reject_request_worker_step(self, ctx: Context, ev: RejectEvent) -> StopEvent:
+        """
+        Handles out-of-scope requests by politely declining and
+        redirecting the user back to the agent's capabilities.
+        """
+        plan: AgentIntent = ev.input
+        language = await ctx.store.get("language", default="en")
+        
+        logger.info("Running Reject Request Worker...")
+
+        prompt = REJECT_AND_REDIRECT_PROMPT.format(language=language)
+        
+        chat_history = await self._get_chat_history(ctx)
+        
+        response = await self.llm.achat(
+            messages=[ChatMessage(role=MessageRole.SYSTEM, content=prompt)] + chat_history[1:]
+        )
+        
+        await self._update_chat_history(ctx, response.message)
+        
+        tools_called = await ctx.store.get("tools_called", default=[])
+        
+        return StopEvent(result={
+            "message": response.message.content,
+            "intent": plan.intent,
+            "tools": tools_called
+        })
     
     @step
     async def ask_for_info_worker_step(self, ctx: Context, ev: AskForInfoEvent) -> StopEvent:
@@ -203,37 +217,50 @@ class CRMAgent(Workflow):
         
         response = await self.llm.achat(messages=[ChatMessage(role=MessageRole.SYSTEM, content=prompt)])
         await self._update_chat_history(ctx, response.message)
-        return StopEvent(result=response.message.content)
+        return self.return_event(response.message.content)
     
-# <-- FIX: Renamed step (typo)
     @step
     async def product_worker_step(self, ctx: Context, ev: ProductEvent) -> StopEvent:
+        """
+        Worker step that handles product search using a "Permissive" strategy.
+        
+        - If the user provides *any* search criteria (query, size, etc.), 
+          it runs the search immediately.
+        - If the user provides *no* criteria (e.g., "I want a product"), 
+          it asks for more information.
+        """
         plan: AgentIntent = ev.input
         tool = self.tools[ToolName.PRODUCT_SEARCH]
-
-        query = plan.entities.get("query")
-        size_inch = plan.entities.get("size_inch")
-        weight_kg = plan.entities.get("weight_kg")
-
-        logger.info(f"Running Product worker step for: {plan.summary_for_next_step}")
-        tool_input = {
-            "query": query,
-            "size_inch": size_inch,
-            "weight_kg": weight_kg
-        }
-        tool_input_cleaned = {k: v for k, v in tool_input.items() if v is not None}
-
-        logger.info(f"Running Product worker step for: {plan.summary_for_next_step}")
-        tool_output = tool(**tool_input_cleaned)
         
-        # Call the new synthesize function
+        searchable_entities = {
+            "query": plan.entities.product_query,
+            "size_inch": plan.entities.size_inch,
+            "weight_kg": plan.entities.weight_kg,
+            "arm_type": plan.entities.arm_type,
+            "vesa": plan.entities.vesa,
+            "desk_thickness_mm": plan.entities.desk_thickness_mm
+        }
+        
+        tool_input_cleaned = {k: v for k, v in searchable_entities.items() if v is not None}
+        
+        logger.info(f"Product worker: Entities found. Running search with {tool_input_cleaned}")
+
+        tool_output_dict = tool(**tool_input_cleaned)
+        tool_output_str = json.dumps(tool_output_dict)
+
         response_str = await self._synthesize_response(
             ctx,
             tool_name=ToolName.PRODUCT_SEARCH,
             tool_input=tool_input_cleaned,
-            tool_output=str(tool_output)
+            tool_output=tool_output_str
         )
-        return StopEvent(result=response_str)
+        
+        tools_called = await ctx.store.get("tools_called", default=[])
+        return StopEvent(result={
+            "message": response_str,
+            "intent": plan.intent,
+            "tools": tools_called
+        })
     @step
     async def faq_worker_step(self, ctx: Context, ev: FAQEvent) -> StopEvent:
         """Worker step that ONLY handles FAQs."""
@@ -246,14 +273,13 @@ class CRMAgent(Workflow):
         logger.info(f"Running FAQ Worker for: {plan.summary_for_next_step}")
         tool_output = tool(**tool_input)
         
-        # Call the new synthesize function
         response_str = await self._synthesize_response(
             ctx,
             tool_name=ToolName.SEARCH_KNOWLEDGE_BASE,
             tool_input=tool_input,
             tool_output=str(tool_output)
         )
-        return StopEvent(result=response_str)
+        return self.return_event(response_str)
 
     @step
     async def order_worker_step(self, ctx: Context, ev: OrderEvent) -> StopEvent:
@@ -273,7 +299,7 @@ class CRMAgent(Workflow):
                 tool_input=tool_input,
                 tool_output=str(tool_output)
             )
-            return StopEvent(result=response_str)
+            return self.return_event(response_str)
         elif run_tool == ToolName.GET_ORDER_DETAILS:
             logger.info("Running Order Worker: get_order_details")
             order_id = await ctx.store.get("order_id")
@@ -287,11 +313,10 @@ class CRMAgent(Workflow):
                 tool_input=tool_input,
                 tool_output=str(tool_output)
             )
-            return StopEvent(result=response_str)
+            return self.return_event(response_str)
             
-        return StopEvent(result="Error in order workflow.")
+        return self.return_event("Error in order workflow.")
 
-    # --- NEW WORKER STEP ---
     @step
     async def handover_worker_step(self, ctx: Context, ev: HandoverEvent) -> StopEvent:
         """
@@ -301,32 +326,30 @@ class CRMAgent(Workflow):
         """
         logger.info("Running Handover Worker...")
         
-        # 1. Get state from context
         email = await ctx.store.get("email")
         conversation_id = await ctx.store.get("conversation_id")
         chat_history = await self._get_chat_history(ctx)
         
-        # 2. Generate summary (New LLM Call)
         summary_prompt = "Summarize this chat history for a human support agent. Be concise."
         summary_response = await self.llm.achat(
             messages=chat_history + [ChatMessage(role=MessageRole.SYSTEM, content=summary_prompt)]
         )
         summary = summary_response.message.content
         
-        # 3. Call the synchronous mock function in a separate thread
         logger.info(f"Calling handover_simple for conv_id {conversation_id}")
         result_string = create_support_ticket(
             conversation_id=conversation_id,
             email=email,
             summary=summary
         )
+        self.tools_called.append(ToolName.CREATE_SUPPORT_TICKET)
         
         await self._update_chat_history(ctx, ChatMessage(role=MessageRole.ASSISTANT, content=result_string))
         
         await ctx.store.set("email", None)
         await ctx.store.set("waiting_for", None)
         
-        return StopEvent(result=result_string)
+        return self.return_event(result_string)
 
     @step
     async def general_response_worker_step(self, ctx: Context, ev: GeneralResponseEvent) -> StopEvent:
@@ -337,4 +360,11 @@ class CRMAgent(Workflow):
         
         response = await self.llm.achat(messages=chat_history)
         await self._update_chat_history(ctx, response.message)
-        return StopEvent(result=response.message.content)
+        return self.return_event(response.message.content)
+    
+    def return_event(self, result: str) -> None:
+        return StopEvent(result={
+            "message": result,
+            "intent": self.intent,
+            "tools": self.tools_called
+        })
