@@ -139,4 +139,4 @@ The `INTENT` (Workflow) agent is **built to solve this.**
 
 The evaluation data was invaluable. It did not prove the `INTENT` architecture was wrong; it proved that my initial **implementation** of its `router_step` logic was too rigid.
 
-The `AUTO` agent is a "smart demo" that wins simple, one-shot sprints. The `INTENT` agent is a "reliable product" that is built to win the marathon of complex, stateful, real-world conversation. It is the only architecture that provides the control, debuggability, and state management required for a production-grade CRM agent.
+The ReAct agent is a prove that wins simple, one-shot sprints. The `INTENT` agent is a "reliable product" that is built to win the marathon of complex, stateful, real-world conversation. It is the only architecture that provides the control, debuggability, and state management required for a production-grade CRM agent.
