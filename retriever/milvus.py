@@ -43,7 +43,6 @@ class CustomMilvusVector(MilvusVectorStoreBase):
             dim=dim,
             uri=uri,
             enable_sparse=True,
-            overwrite=True
         )
 
     @property

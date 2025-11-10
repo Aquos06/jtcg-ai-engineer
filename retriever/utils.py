@@ -8,7 +8,7 @@ from llama_index.core.schema import TextNode
 
 from retriever.const import EMBEDDING_TOP_K
 from retriever.vector_store import CustomVectorStoreIndex
-from retriever.vector_store import milvus_vector_store
+from retriever.vector_store import milvus_vector_store, product_vector_store
 from retriever.embedding import embedding_model
 
 def get_retrieval_engine() -> BaseRetriever:
@@ -33,6 +33,28 @@ def add_node(text:str, node_id: UUID4, metadata: Optional[dict] = {}) -> None:
 
 def add_node_batch(nodes: List[TextNode]) -> None:
     milvus_vector_store.add(nodes=nodes)
+
+def add_product_node_batch(nodes: List[TextNode]) -> None:
+    product_vector_store.add(nodes=nodes)
+
+def get_retrieval_product_engine() -> BaseRetriever:
+    vector_index = CustomVectorStoreIndex(
+        vector_store=product_vector_store,
+        embed_model=embedding_model,
+        insert_batch_size=512,
+    )
+
+    vector_retriever = vector_index.as_retriever(
+        similarity_top_k=3,
+        vector_store_query_mode=VectorStoreQueryMode.HYBRID,
+    )
+
+    return vector_retriever
+
+#TODO: refactor
+def retrieve_from_product(text: str) -> List[NodeWithScore]:
+    retrieval_engine = get_retrieval_product_engine()
+    return retrieval_engine.retrieve(text)
 
 def retreive_from_vector_store(text: str) -> List[NodeWithScore]:
     retrieval_engine = get_retrieval_engine()

@@ -22,7 +22,7 @@ from llama_index.core.vector_stores.types import (
 )
 
 from retriever.milvus import CustomMilvusVector
-from config.env import EMBED_DIM, MILVUS_URL, COLLECTION_NAME
+from config.env import EMBED_DIM, MILVUS_URL, COLLECTION_NAME, PRODUCT_COLLECTION_NAME
 
 logger = logging.getLogger(__name__)
 
@@ -153,3 +153,4 @@ def create_vector_store(collection_name: str) -> Optional[CustomMilvusVector]:
         raise e
 
 milvus_vector_store = get_vector_store(collection_name=COLLECTION_NAME)
+product_vector_store = get_vector_store(collection_name=PRODUCT_COLLECTION_NAME)

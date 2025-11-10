@@ -1,7 +1,7 @@
 import re
 from pydantic import UUID4
 from typing import List, Union, Dict, Optional, Any
-from retriever.utils import retreive_from_vector_store
+from retriever.utils import retreive_from_vector_store, retrieve_from_product
 from document.data import product_df, order_db
 
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
@@ -25,6 +25,73 @@ def product_search(query: Optional[str] = None, size_inch: Optional[int] = None,
         ]
     results = filtered_df.to_dict('records')
     product_list = [{ "sku": r["sku"], "name": r["name"], "url": r["url"], "image": r["images/0"], "compatibility": r["compatibility_notes"]} for r in results]
+    return {"status": "success", "products": product_list}
+
+def product_search(
+    query: Optional[str] = None,
+    size_inch: Optional[int] = None,
+    weight_kg: Optional[float] = None,
+    arm_type: Optional[str] = None,
+    vesa: Optional[str] = None,
+    desk_thickness_mm: Optional[int] = None
+) -> Dict[str, Any]:
+    """
+    Searches the product catalog.
+    - query: Searches name, compatibility notes, and included items.
+    - size_inch: Finds arms that support *at least* this size.
+    - weight_kg: Finds arms where the weight is *within* the supported range.
+    - arm_type: Filters by type (e.g., 'wall_mount', 'accessory', 'dual_gas_spring').
+    - vesa: Checks if the arm supports a VESA standard (e.g., '75x75', '100x100').
+    - desk_thickness_mm: Checks if the desk thickness is within the supported range.
+    """
+    filtered_df = product_df.copy()
+
+    result_query = []
+    if query:
+        result = retrieve_from_product(query)
+        result_query = [n.metadata for n in result]
+
+    if arm_type:
+        filtered_df = filtered_df[filtered_df['specs/arm_type'] == arm_type]
+
+    if size_inch:
+        filtered_df = filtered_df[
+            (filtered_df['specs/size_max_inch'] >= size_inch) | 
+            (filtered_df['specs/arm_type'] == 'accessory')
+        ]
+
+    if weight_kg:
+        filtered_df = filtered_df[
+            (filtered_df['weight_min_kg'] <= weight_kg) &
+            (filtered_df['weight_max_kg'] >= weight_kg)
+        ]
+
+    if vesa:
+        filtered_df = filtered_df[
+            (filtered_df['specs/vesa/0'] == vesa) |
+            (filtered_df['specs/vesa/1'] == vesa)
+        ]
+        
+    if desk_thickness_mm:
+        filtered_df = filtered_df[
+            (filtered_df['desk_min_mm'] <= desk_thickness_mm) &
+            (filtered_df['desk_max_mm'] >= desk_thickness_mm)
+        ]
+
+    results = filtered_df.to_dict('records')
+    if not query and not arm_type and not size_inch and not weight_kg and not vesa and not desk_thickness_mm:
+        results = product_df.to_dict("records")
+
+    product_list = [{
+        "sku": r["sku"],
+        "name": r["name"],
+        "url": r["url"],
+        "image": r["images/0"],
+        "compatibility": r["compatibility_notes"]
+    } for r in results]
+
+    product_list.extend(result_query)
+
     return {"status": "success", "products": product_list}
 
 def get_orders_by_user(user_id: str) -> Dict[str, Any]:
