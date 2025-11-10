@@ -1,0 +1,625 @@
+﻿input_history,input_question,agent_response,detected_intent,tools_called,is_correct1,is_correct,violations
+[],請問你們的退換貨政策是什麼？,我們提供7天鑑賞期（含例假日），商品需保持全新、完整包裝與配件。非瑕疵退換貨可能需自行負擔來回運費。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],保固多久？維修怎麼申請？,我們的產品享有1年的有限保固。維修申請需提供訂單編號或發票資訊，並備妥故障影片或照片，透過線上表單提交RMA。客服會在工作日內回覆檢測與處理方式。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],發票可以開三聯式嗎？要怎麼填統編？,"您好，JTCG Shop 提供電子發票，若需三聯式發票，請在下單時備註統編與抬頭。若遺漏，出貨前可聯繫客服協助補辦。  
+
+說明：我們主要提供電子發票，並可開立三聯式發票，需在訂購時備註相關資訊，方便我們為您準備。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],出貨大概幾天？有免運嗎？,"出貨時間約為1-2個工作天，預購商品則依頁面標示為準。滿NT$1,500即可享免運，離島或外島運費另計。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],VESA 100x100 的螢幕可以用哪支臂？,您可以考慮使用JTCG 超寬螢幕重載臂（至 49 吋），它支持 VESA 100x100，適合較大且重量較重的螢幕。詳情請點擊[這裡](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。,product_search,[],,True,[]
+[],我的桌板厚 85mm，夾具能裝嗎？,根據資料，夾具建議安裝於10至85mm厚的桌板。您的桌板厚度為85mm，屬於上限範圍內，應該可以安裝，但建議確認夾具的最大夾持深度是否符合您的需求。如有特殊情況，建議使用穿孔固定或加裝延伸固定片以確保穩固。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我要找真人客服,您好，我可以協助您。請問您的電子郵件地址是？,human_handover,[],,True,[]
+[],轉真人，謝謝,您好，我可以協助您。請問您的電子郵件地址是？,human_handover,[],,True,[]
+[],human agent please,I can transfer you. What is your email?,human_handover,[],,True,[]
+[],connect to agent,I can transfer you. What is your email?,human_handover,[],,True,[]
+[],我想要推薦雙螢幕支架，27 吋,我推薦您可以參考JTCG雙螢幕氣壓支架Pro（支援至32吋），適合27吋螢幕，具有穩定性與調整靈活性。您可以點擊以下連結了解詳情：[JTCG 雙螢幕氣壓支架Pro](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。,product_search,[],,True,[]
+[],34 吋曲面螢幕適合哪一款臂架？,"建議您選擇JTCG 超寬螢幕重載臂（至49吋），它適用於34-49吋超寬曲面螢幕，並且具有較高的承重能力與VESA兼容性。您可以參考此連結了解詳情：[點此查看](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。  
+
+這款臂架專為大型螢幕設計，能提供穩定支撐與調整，讓您的工作空間更整潔、更具彈性。",product_search,[],,True,[]
+[],49 吋超寬螢幕有支援的重載臂嗎？,"Yes, the JTCG 超寬螢幕重載臂 (SKU: JTCG-ARM-ULTRAWIDE-49) supports 49-inch ultra-wide monitors. You can find more details and purchase it [here](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49).",product_search,[],,False,['R-3']
+[],要壁掛有推薦嗎？,"我們推薦幾款壁掛支架，包括JTCG壁掛式折疊支架（適用於34吋以下）和超寬屏重載壁掛支架（適用於34-49吋）。您可以根據螢幕尺寸和需求選擇。詳細資訊請點擊以下連結：
+- [壁掛式折疊支架（34吋以下）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)
+- [超寬屏重載壁掛支架（34-49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)
+
+如果需要更詳細的建議，請提供您的螢幕尺寸或其他需求！",product_search,[],,True,[]
+[],有沒有筆電托盤可以接 VESA？,我們的筆電托盤類配件可以搭配 VESA 轉接板或支架，並支援常見的 VESA 75×75 和 100×100 規格。請確認托盤或轉接板的負重與尺寸範圍後再安裝。如需詳細資訊，請告知您的需求，我可以協助您找到適合的產品。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],走線管理套件有賣嗎？,"我們有走線管理套件，您可以參考以下產品：
+- [桌面走線管管理組](https://example.com/jtcg/p/JTCG-CABLE-MGMT-KIT)
+- [桌面走線管管理套件](https://example.com/jtcg/p/JTCG-CABLE-MGMT-KIT)
+
+這些產品適用於整理桌面走線，讓您的工作空間更整潔。請點擊連結了解詳細資訊！",product_search,[],,True,[]
+[],請問可用 Apple Pay 或 LINE Pay 嗎？,"您好，JTCG Shop 支援 Apple Pay 和 LINE Pay 付款方式。  
+
+我們提供多元的支付選擇，讓您購物更方便。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],可以分期付款嗎？,"是的，JTCG Shop 支援信用卡（VISA / Master / JCB）、Apple Pay、Google Pay 和 LINE Pay 的分期付款。部分銀行提供3、6、12期的分期選擇，實際手續費與門檻請以結帳頁提示為準。
+
+這樣可以幫助您更方便地進行購買，符合我們的品牌理念“Better Desk, Better Focus”。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],海外寄送香港可以嗎？,您好，我們目前主要配送台灣本島，離島/外島運費與時程會在結帳時顯示。海外配送可以先透過客服評估可行方案與預估費用。請聯繫客服了解詳細資訊。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],缺貨能設定到貨通知嗎？,"是的，您可以在商品頁點選「到貨通知我」，系統會在商品補貨後以Email通知您。提醒僅代表商品已可下單，實際購買仍以結帳成功為準。
+
+這樣設置可以讓您在商品缺貨時提前知道何時補貨，方便您及時購買。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],有提供到府安裝嗎？,我們在特定地區提供到府安裝服務，費用依地區與安裝難度而定。建議您下單前先與客服確認是否支援。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],夾具跟穿孔裝哪個比較穩？,根據資料，穿孔固定的穩定性較佳，尤其適合較重或特殊材質的桌面。而夾具則安裝方便，適合較輕或標準桌面。選擇時可根據桌面材質和使用需求來決定。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],螢幕 6 公斤可以用哪款？,"建議您選擇JTCG雙臂氣壓支架Pro（支援至32公斤），適合6公斤的螢幕。您可以參考此款產品的詳細資訊：[點此查看](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。  
+
+這款支架支援24至32吋螢幕，並且設計用於較重的螢幕，能提供穩定的支撐與調整。",product_search,[],,True,[]
+[],氣壓臂張力要怎麼調？,請使用隨附的六角扳手，順時針或逆時針微調氣壓臂上的張力，直到螢幕能穩定停在您常用的高度。建議逐步調整，避免一次轉動過多圈。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],沒有 VESA 孔怎麼裝？,"如果您的螢幕沒有VESA孔，可以考慮使用VESA轉接板或專用配件，如筆電托盤，來進行安裝。在選擇轉接板或配件時，請確認其負重和尺寸符合您的需求。這樣可以確保安全穩固的安裝，達到「Better Desk, Better Focus」的效果。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],家裡有小孩，使用安全要注意什麼？,使用時請避免讓小孩攀爬或懸掛在螢幕臂上，並定期檢查螺絲鎖固狀況。此外，建議加裝保護墊片，避免桌面刮傷。這樣可以確保安全並延長產品壽命。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],壁掛需要什麼牆面條件？,"建議安裝於磚牆或實心牆面；若為石膏板或輕隔間，需使用對應膨脹螺絲或請專業安裝。請先評估牆面承重。  
+
+這是因為不同牆面材質的承重能力不同，磚牆和實心牆較適合壁掛，能提供較穩固的支撐；而石膏板或輕隔間則需要特殊螺絲或專業安裝，以確保安全與穩定。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],要申請 RMA 維修怎麼做？,您好，申請 RMA 維修請備妥訂單編號與故障影片或照片，並在線上表單提交 RMA。客服會在工作日內回覆檢測與處理方式。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],電子發票可以重發嗎？,"電子發票可以在會員中心補發下載。若需更改抬頭或統編，請於下單時填寫，若遺漏請於出貨前聯繫客服協助。  
+
+這是因為我們提供電子發票的補發服務，方便您隨時取得發票資料。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],公司想大量採購可以報價嗎？,"您好，您好，當然可以提供大量採購的專案報價。請提供您的需求數量、安裝地點與時程，以便我們為您進行評估與報價。  
+
+我們可以根據您的需求提供專案報價、到府安裝與教育/企業折扣評估。期待您的詳細資訊！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],退貨流程跟退款時程？,"退貨流程為：線上提出申請 → 包裝回收 → 檢查完成後辦理退款。退款時程約為7到14個工作天，視支付方式與銀行作業時間而定。
+
+這個流程確保您的退貨與退款能順利進行，並且退款時間會依照銀行處理時間而有所不同。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],怎麼查物流追蹤？,您好！我可以協助您。請問您的用戶ID是什麼？,order_info,[],,True,[]
+[],會員點數怎麼用？,會員點數可以在結帳時用來抵用，但不得折換現金。有效期限和使用規則請以會員中心公告為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],臂架保養清潔怎麼做？,建議以微濕布擦拭臂架，避免使用含溶劑的清潔劑。定期檢查關節與螺絲是否鬆動，並適度調整。這樣可以保持臂架的良好狀態，延長使用壽命。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],桌深需要多少？牆距要留多少？,一般建議桌深至少60cm，牆距則應保留10-15cm以方便走線和臂架活動。這樣可以確保空間充足，提升使用舒適度。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],走線有什麼整理建議？,走線建議包括沿臂架後側與走線槽固定，預留轉動餘量避免拉扯，並避免轉接器與變壓器懸空以降低受力。這樣可以保持整潔並延長設備壽命。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],贈品沒附到可以補寄嗎？,如果您的贈品未附在包裹中，請在7日內提供開箱照片與訂單資訊，我們將協助補寄。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],VESA 螺絲規格要用多長？,VESA 螺絲通常為 M4，長度多為 10 至 14mm。請以您的螢幕原廠手冊為準，避免螺絲過長壓壞機板。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],能跟電動升降桌一起用嗎？,可以搭配電動升降桌使用，但請留意臂展與走線鬆弛度，避免升降時拉扯線材。建議預留10-15cm的線材餘量，並確保電源變壓器不懸空。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],桌後有擋板，夾具還能裝嗎？,"若桌後有擋板或外翻邊，建議確認夾具的深度與高度是否適合您的桌面。若有干涉，建議改用穿孔固定或加裝延伸固定片。  
+
+這樣可以確保夾具穩固且不影響擋板的使用。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],兩台不同尺寸的螢幕可不可以混搭？,可以混搭不同尺寸的螢幕，但建議兩側的重量相近以保持平衡。使用雙臂時，請調整各臂的張力，讓兩台螢幕都能穩定停駐。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],包裝內有附哪些工具和零件？,包裝內附有臂架本體、夾具/穿孔配件、六角扳手，以及VESA螺絲組（型號依商品而異）。穿孔安裝可能需要自備電鑽與量尺。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],外箱撞到、零件少了怎麼辦？,請立即拍攝外箱與內容物的狀況，並連同訂單編號於7日內回報客服。我們會協助更換缺件或安排售後處理。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],下單後想改地址可以嗎？,未出貨前，您可以聯繫客服協助修改地址。若已進入出貨流程，可能需要取消訂單重新下單，實際狀況以系統為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],可以取消訂單嗎？,您好！我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],預購會分批出貨嗎？,預購商品會依照頁面標示的時程出貨，若同一訂單包含現貨與預購商品，可能會採用分批出貨。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],保固需要另外登錄嗎？可以轉移嗎？,保固通常限原始購買者，不隨轉售轉移。部分商品提供線上保固登錄，請以商品頁或憑證說明為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+[],臂架有異音怎麼處理？,您好，臂架異音若為輕微金屬摩擦聲屬於正常磨合範圍，但若異音明顯，建議檢查螺絲鎖付與走線是否干涉，必要時可於關節轉點施以少量潤滑（請勿沾染面板）。這樣可以幫助減少異音並維持臂架的良好狀態。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],螺絲、轉接板這些備品能單買嗎？,"您好，配件和備品（如螺絲、轉接板）可以在配件館單獨選購。如找不到對應零件，請提供SKU與需求，我們將協助您。  
+
+這是因為我們提供多種常用耗材與備品，方便客戶自行選購或補充。如需進一步協助，請隨時告知！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],如果剛買就降價，會補差嗎？,如果商品在剛購買後降價，我們的價格保護政策可能不適用，因為不同活動檔期可能不提供補差。建議您可以聯繫客服確認您的訂單是否符合補差條件。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],你們會怎麼使用我的 Email？,"您的 Email 僅用於本次服務聯繫與訂單通知，不用於行銷用途。  
+
+我們會用您的 Email 來通知您訂單狀況、缺貨通知、發票寄送，以及客服聯絡等相關服務。  
+
+更多細節請參考我們的隱私權政策。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我想查訂單狀態,您好！我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],幫我查一下配送進度,您好！我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],查訂單 JTCG-202508-10001 的明細,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是？,order_info,[],,True,[]
+[],我的 user_id 是 u_123456，想看歷史訂單,"您好，您的歷史訂單如下：
+1. JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋） - 2025-08-10
+2. JTCG 單臂支架 Lite（至 27 吋） - 2025-07-22
+
+如需詳細資訊，請告知！",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+[],user_id u_999999，查最近那筆訂單,您好，您的最新訂單是JTCG 超寬螢幕重載臂（至 49 吋），於2025年8月12日下單。如需其他協助，請告知！,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-3']
+[],我要看訂單列表,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],請轉真人，我很急,我可以幫您處理。請問您的電子郵件是什麼？,human_handover,[],,True,[]
+[],在線客服在嗎？,我可以帮您处理这个问题。请问您的电子邮箱是？,human_handover,[],,True,[]
+[],service hours 客服什麼時段有？,我們的線上客服服務時間為週一至週五，09:30 至 18:00（國定假日除外）。若遇尖峰時段，請留下您的Email，我們將盡快回覆您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],請推薦一款 32 吋可用的單臂,"我推薦您可以考慮JTCG雙臂氣壓支架Pro（支持至32吋），它適合較重的顯示器，並且具有良好的穩定性。您可以在此連結查看詳情：[JTCG 雙臂氣壓支架Pro](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。  
+
+這款支架適合最大32吋的顯示器，並且支援多種VESA標準，能提供良好的調整空間，讓您的工作環境更整潔、更高效。",product_search,[],,False,['R-4']
+[],雙螢幕 + 筆電托盤要怎麼搭配？,建議雙螢幕和筆電托盤搭配時，請確保重量平衡，並確認托盤的負重與尺寸符合您的筆電規格。若螢幕或托盤沒有VESA孔，您可以選擇搭配轉接板或專用托盤配件。這樣可以確保穩定性與兼容性，讓您的工作空間更整潔、更穩固。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],VESA 200x100 能用哪款？,"您好，VESA 200x100 兼容的產品主要支持 VESA 75x75 和 100x100 規格的臂架。部分超寬螢幕可能需要使用強化背板或專用轉接板來適配。建議您確認螢幕背板的VESA規格和重量，以選擇合適的臂架。  
+
+這是因為我們的臂架支援常見的VESA 75x75和100x100規格，對於非標準尺寸，可能需要額外配件來確保穩定與安全。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-3', 'R-4', 'R-5']"
+[],我的桌子是玻璃的，怎麼裝比較安全？,建議在玻璃桌面上安裝時，使用墊片或改用穿孔固定方式，以確保安全與穩定。避免直接用夾具夾持玻璃表面，並定期檢查固定狀況。這樣可以有效降低意外滑動或損壞的風險。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],大概多少時間可以安裝完成？,"安裝時間會依據安裝方式和地點而有所不同。若是到府安裝，特定地區合作廠商會提供服務，時間會根據情況而定。建議您先與客服確認您的需求和地點，以獲得更準確的預估時間。  
+
+我們的安裝服務包括必要的工具和配件，若需要穿孔安裝，可能需要額外的工具如電鑽。請提前評估牆面條件，確保安裝順利。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],付款失敗怎麼辦？,如果您的付款失敗，建議您可以檢查以下幾點：確認支付資訊是否正確、信用卡或支付工具是否有餘額或限制，或是網路連線是否穩定。如仍有問題，請聯繫您的銀行或支付平台客服協助解決。若需要進一步協助，也可以提供您的訂單資訊，我們會協助您處理。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],可以改成面交嗎？,抱歉，我無法提供這方面的協助。我主要專注於 JTCG Shop 的服務。我可以協助您進行產品推薦、查詢訂單狀態、回答常見問題，或為您轉接真人客服。,reject_request,[],,False,['R-5']
+[],我想知道活動優惠的使用規則,活動優惠的使用規則包括：每筆訂單限用一張優惠券，且不得與部分專案或企業報價合併使用。活動期間與適用商品以頁面公告為準。如需詳細資訊，請參考我們的公告。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],我需要發票抬頭變更,您好，關於發票抬頭變更，請在下單時備註統編與抬頭。如需事後變更，請聯繫客服協助。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],客服信箱是多少？,您好，我們的客服聯絡段為週一至週五 09:30 – 18:00（國定假日除外）。若遇尖峰時段，請留下您的Email，我們將盡速回覆您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-5']
+[],退款多久會到帳？,退款約需7至14個工作天，具體時間取決於您的支付方式與銀行作業流程。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],How to track my order?,I can help with that. What is your user_id?,order_info,[],,True,[]
+[],Do you ship internationally?,目前我們主要配送台灣本島，離島/外島運費與時程會在結帳時顯示。海外配送可先透過客服評估可行方案與預估費用。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],Need invoice reissue,I can help with that. What is your user_id?,order_info,[],,True,[]
+[],請問台北有安裝服務嗎？,是的，我們在特定地區提供到府安裝服務，通常由合作廠商執行。請在下單前與客服確認是否支援您的地區。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],JTCG-ARM-DUAL-PRO-32 有現貨嗎？,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是？,order_info,[],,True,[]
+[],JTCG-ARM-ULTRAWIDE-49 支援 49 吋曲面嗎？,根據我們的資料，JTCG-ARM-ULTRAWIDE-49 支援 VESA 75×75 和 100×100 規格，並建議搭配強化背板以支援超寬/曲面螢幕。請確認您的49吋曲面螢幕符合這些VESA規格，並注意螢幕的淨重是否在臂架承重範圍內。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],JTCG-WALL-ARM-34 是否含膨脹螺絲？,"JTCG-WALL-ARM-34 不包含膨脹螺絲。  
+
+根據我們的資料，包裝內容物通常包括臂架本體、夾具或穿孔配件、六角扳手以及VESA螺絲組，但未特別提及膨脹螺絲。  
+
+如果您需要膨脹螺絲，建議自行準備或向我們的客服確認是否有相關配件可供購買。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+[],JTCG-LAPTOP-VESA-KIT 能裝 16 吋筆電嗎？,JTCG-LAPTOP-VESA-KIT 支援 VESA 75 × 75 和 100 × 100 規格，通常適用於大多數筆電托盤或轉接板。請確認您的筆電托盤或轉接板的負重和尺寸範圍，以確保適配。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-3', 'R-5']"
+[],JTCG-CABLE-MGMT-KIT 裡面有哪些配件？,"JTCG-CABLE-MGMT-KIT 內含有線管理配件，包括束線帶、夾子或其他相關走線配件。  
+
+這些配件旨在幫助您整理和固定電纜，讓您的工作空間更整潔。  
+
+如果需要更詳細的內容或其他配件資訊，請隨時告知！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我桌板 20mm，夾具夠嗎？,"根據資料，夾具適用於10至85mm厚的桌板。您的20mm厚桌板在此範圍內，夾具應該是適用的。  
+
+這表示您的夾具可以穩固地固定在20mm厚的桌板上，符合建議範圍，能提供良好的支撐與穩定性。  
+
+如果有特殊材質或其他配件需求，建議再確認夾具的深度與高度是否符合您的桌面特性。  
+
+我們的品牌理念是""Better Desk, Better Focus""，希望您有一個更好的工作空間！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],請問保固範圍包含人為損壞嗎？,保固範圍通常不包含人為損壞。根據我們的資料，非人為損壞的商品可以申請檢測與維修，但人為損壞則不在保固範圍內。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],有企業合作方案嗎？學校採購也適用？,"您好，我們提供企業和學校的大量採購方案，包括專案報價、到府安裝以及教育/企業折扣評估。請提供您的需求數量、安裝地點與時程，以便我們為您提供詳細資訊。  
+
+我們也支持配件與備用零件的單獨購買，您可以在配件館選購常用耗材與備品。如需協助找到特定零件，請提供SKU與需求。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],發票什麼時候寄？可在哪裡下載？,您好，電子發票在出貨完成後會以Email寄送或可於會員中心下載查詢。若需三聯式發票，請於下單時備註統編與抬頭。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],我不確定要買哪款，你可以問我幾個問題幫我選嗎？,您好！為了幫助您選擇合適的產品，請問您主要的用途是什麼？例如：辦公、遊戲、學習或其他？另外，您偏好哪種尺寸或功能？這樣我可以更精確地為您推薦。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],請問可否貨到付款？,"您好，目前JTCG Shop不提供貨到付款的服務。我們主要接受信用卡（VISA / Master / JCB）、Apple Pay、Google Pay和LINE Pay等付款方式。  
+這樣可以確保您的購物流程更為便捷與安全。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],LINE Pay 有回饋嗎？,"LINE Pay 目前在我們的支付選項中有提供，但關於是否有回饋，建議您可以直接查看LINE Pay的官方公告或活動頁面，以獲取最新的回饋資訊。  
+
+我們支持多種支付方式，包括LINE Pay，方便您的購物體驗。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],海外退貨流程怎麼辦？,您好，海外退貨流程如下：線上提出申請 → 包裝商品寄回 → 檢查完成後辦理退款。退款約需7至14個工作天，視支付方式與銀行作業時間而定。如需協助，請聯繫客服。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+[],我想看雙螢幕支架的比較,"以下是幾款雙螢幕支架的比較：
+
+1. [JTCG 雙螢幕氣壓支架 Pro（支持至 32 吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)
+   - 適用螢幕尺寸：24-32 吋
+   - 特點：強化背板，適合較重螢幕
+2. [JTCG 單螢幕支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)
+   - 適用螢幕尺寸：至 27 吋
+   - 特點：輕巧，適合小型或輕量螢幕
+3. [JTCG 超寬螢幕重載支架（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)
+   - 適用螢幕尺寸：34-49 吋
+   - 特點：適用超寬螢幕，重型設計
+4. [壁掛式升降支架（至 34 吋）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)
+   - 適用螢幕尺寸：需壁掛
+   - 特點：節省桌面空間
+5. [筆電轉VESA轉接套件](https://example.com/jtcg/p/JTCG-LAPTOP-VESA-KIT)
+   - 適用：支持VESA螢幕
+6. [桌面走線管理組](https://example.com/jtcg/p/JTCG-CABLE-MGMT-KIT)
+   - 功能：整理桌面線路
+
+如果需要更詳細的比較或建議，請告知！",product_search,[],,False,['R-3']
+[],請幫我把客服轉真人（human agent）,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,True,[]
+[],这款支架支持75×75吗？（简体）,"是的，我们的支架支持75×75的VESA规格。  
+
+这是因为我们的臂架支持常见的VESA 75×75和100×100规格，确保兼容多种显示器。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+[],退货政策是什么？（简体）,JTCG Shop 提供7天鑑賞期（含例假日），商品需保持全新、完整包裝與配件。非瑕疵退換貨可能需自行負擔來回運費。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],发票怎么开？（简体）,"您好，JTCG Shop 提供电子发票，出货完成后会以Email寄送或在会员中心下载。如需三联式发票，请在下单时备注公司抬头和统一编号。若需要重发或变更抬头，也可以在会员中心操作或联系客户服务协助。  
+感谢您的关注！""Better Desk, Better Focus.""",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],有没有49寸显示器支架？（简体）,"我们有适合49寸显示器的超宽显示器支架，型号为JTCG 超宽显示器重载支架（至49寸），详细信息请点击[这里](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。  
+
+这个支架适用于34-49寸超宽显示器，建议确认显示器的重量和VESA接口是否符合支架的规格。  
+
+如果需要其他类型的支架或有更多问题，欢迎随时咨询！  
+""Better Desk, Better Focus.""",product_search,[],,True,[]
+[],我要查询订单（简体）,我可以帮您处理这个问题。请问您的用户ID是多少？,order_info,[],,True,[]
+[],請問你們的客服時間？,我們的客服時間為週一至週五 09:30 – 18:00（國定假日除外）。若遇尖峰時段，請留下您的Email，我們將盡快回覆您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],運費怎麼計算？離島另外加價嗎？,"運費在結帳時會顯示，滿 NT$1,500 免運，離島或外島運費另計。  
+
+我們會在結帳頁面詳細列出運費金額，請您以該頁資訊為準。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],如果螢幕 8 公斤，哪個型號比較適合？,"建議您選擇JTCG \u96d9\u87a2\u5e55\u6c23\u58d3\u81c2 Pro（支援至32吋），適合8公斤螢幕。  
+詳情請點擊[此處](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。  
+
+這款支架能承受較重的螢幕，並提供穩定的支撐，讓您的工作空間更整潔、更有助於專注。",product_search,[],,True,[]
+[],我有兩台 27 吋要左右擺，推薦？,我推薦您使用 JTCG \u55ae\u81c2\u652f\u67b6 Lite\uff08\u81f3 27 \u540b\uff09，適合27吋螢幕左右擺放，並且適用於小型與輕量螢幕，方便調整位置。您可以參考這款產品的詳細資訊：[點此查看](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)。,product_search,[],,True,[]
+[],請幫我連接人工客服，我的問題很複雜,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,True,[]
+[],我想退貨流程怎麼走？順便推薦一支 27 吋單臂,"您好，退貨流程請您參考我們的退貨政策，通常需要提供訂單資訊並聯繫客服協助安排退貨。請您提供訂單編號，我將協助您進一步處理。
+
+至於27吋單臂推薦，建議選擇支援VESA 75×75或100×100規格的臂架，並確認承重範圍符合您的螢幕重量。若需要更詳細的推薦，請告知您的預算或偏好。
+
+我們的品牌理念是""Better Desk, Better Focus""，期待幫助您打造更好的工作空間！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],請問保固多久，另外 32 吋有沒有現貨？,保固期限為1年，非人為損壞可申請檢測與維修。至於32吋商品的現貨情況，請提供更詳細的型號或資訊，我將協助您查詢。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我要查訂單配送進度，也想問免運門檻,我可以協助您。請問您的 user_id 是什麼？,order_info,[],,False,['R-5']
+[],可以轉真人嗎？同時幫我看一下 JTCG-ARM-DUAL-PRO-32 的相容性,您好，我可以帮您处理相关事宜。请问您的电子邮箱是？,human_handover,[],,False,['R-5']
+[],我想知道客服時間，還有壁掛臂哪款最穩,我們的客服時間為週一至週五 09:30 至 18:00，國定假日除外。至於最穩的壁掛臂，建議安裝於磚牆或實心牆面，若為石膏板則需使用專用膨脹螺絲或請專業安裝。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],查訂單 JTCG-202508-10001 的狀態，另外這款有配件嗎？,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,True,[]
+[],退貨政策與是否支援 Apple Pay 一起告訴我,JTCG Shop 支援 Apple Pay 付款方式，並提供7天鑑賞期的退換貨政策。商品需保持全新、完整包裝與配件，非瑕疵退換貨可能需自行負擔來回運費。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],海外寄送可以嗎？同時推薦重載臂,您好，我們支持海外寄送，請提供您的收件地址以便確認運費與配送時間。關於重載臂，我們建議選擇符合螢幕淨重和VESA規格的強化背板或專用轉接板，以確保穩定與安全。若需要更詳細的推薦，請提供您的螢幕尺寸與重量。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],想比較雙臂 vs 壁掛，順便看我的歷史訂單,"雙臂支架推薦：  
+- [JTCG 雙臂氣壓臂 Pro（支持至 32 吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)  
+- [JTCG 超寬臂重載臂（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)  
+
+壁掛支架推薦：  
+- [JTCG 壁掛式折疊臂（至 34 吋）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)  
+
+關於您的歷史訂單，請提供您的帳號或訂單資訊，我可以幫您查詢。",product_search,[],,True,[]
+[],請直接找真人，還要查 order_id 清單,我可以幫您處理這個問題。請問您的電子郵件是什麼？,human_handover,[],,True,[]
+[],"My order status please, and recommend a 49"" mount.",I can help with that. What is your user_id?,order_info,[],,False,"['R-4', 'R-5']"
+[],Do you ship internationally and what's your return policy?,"We mainly ship within Taiwan, including some options for overseas delivery, which can be evaluated with our customer service. For returns, we offer a 7-day appreciation period, and items must be kept in new, complete condition with original packaging and accessories. Non-defective returns may require you to cover the return shipping costs.",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我要發票三聯，另外幫我挑一款支架,您好，我可以協助您。請問您的用戶ID是什麼？,order_info,[],,False,['R-4']
+[],客服表單在哪？也想設定到貨通知,您好，客服表單可以在我們的網站上找到，並且您可以在商品頁點選「到貨通知我」來設定到貨通知。系統會在商品補貨後以Email通知您。提醒僅代表商品已可下單，實際購買以結帳成功為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],能不能取消訂單，同時問問保固可轉移嗎？,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,False,['R-5']
+[],我有 user_id u_123456，想看訂單並問 VESA 200x100 可以用哪款,"您好，您的訂單包括JTCG雙螢幕氣壓臂Pro和單臂支架Lite。  
+關於VESA 200x100的支架，建議您選擇符合此VESA規格的產品。  
+
+請問您需要我們推薦適用的支架款式嗎？",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-4']
+[],付款方式有哪些？另外幫我查一下最近一筆訂單,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,True,[]
+[],桌板 15mm 能夾嗎？還有物流多久到,15mm厚的桌板可以使用夾具，但需注意夾具的適用範圍。建議安裝於10-85mm厚的桌面，15mm屬於範圍內，應該可以夾持。物流時間視您的地區而定，請提供收件地址，我可以幫您查詢預估到貨時間。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我想要真人客服，也幫我估算運費,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,False,['R-5']
+[],想了解促銷規則，另外 27 吋雙螢幕建議,促銷規則包括每筆訂單限用一張優惠券，且不得與部分專案或企業報價合併使用。活動期間與適用商品以頁面公告為準。關於27吋雙螢幕建議，請確保兩側重量相近以利平衡，並確認VESA規格與承重範圍，建議搭配強化背板以確保穩定。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],查詢 u_999999 的訂單，同時詢問保固申請流程,"您的訂單編號為 JTCG-202508-11021，於2025年8月12日下單，商品為超寬螢幕重載臂（至49吋）。  
+
+關於保固申請流程，請您提供您的聯絡資訊，我們將協助您進行後續的申請步驟。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-1']
+[],退貨退款多久？同時看一下壁掛伸縮距離,"退貨退款時間通常需視購買平台的政策而定，建議您直接聯繫JTCG Shop客服或查閱您的購買憑證以獲取詳細資訊。
+
+關於壁掛伸縮距離，臂展會影響可調整範圍。一般建議桌深至少60cm，並在桌面後方保留10-15cm空間以利走線與臂架活動。若需更詳細的資訊，請提供您的螢幕尺寸或型號。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-3', 'R-4']"
+[],我想預購，還想知道客服有沒有週末,您好，我們的客服服務時間為週一至週五 09:30 – 18:00，國定假日除外。週末暫無客服服務，但若遇尖峰時段，請留下您的Email，我們會盡快回覆您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],这款支架支持75×75吗？另外能查订单吗？（简体）,您好，这款支架支持75×75的VESA规格。关于订单查询，请提供您的订单信息，我可以帮您查找。,product_search,[],,False,['R-1']
+[],我要查询订单并了解退货规则（简体）,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,True,[]
+[],請問可以分期嗎？另外跟我說 RMA 怎麼申請,您好，目前我們不提供分期付款服務。關於 RMA 申請，請備妥訂單編號與故障影片或照片，並在線上表單提交。客服會在工作日內回覆您的檢測與處理方式。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],我需要到府安裝資訊，也想問是否支援 34 吋曲面,我們提供特定地區的到府安裝服務，請在下單前與客服確認是否支援您的地區。關於34吋曲面螢幕，建議選購時以「螢幕淨重」和VESA規格為準，並建議搭配強化背板以確保穩定。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],想要看 accessories 清單，順便查配送,"您可以在配件館選購常用耗材與備品，如螺絲組、轉接板、走線配件等。若找不到對應零件，請提供SKU與需求給客服協助。
+
+至於配送，出貨後可於「我的訂單」頁點擊追蹤碼查看最新配送狀態。如長時間無更新，請聯繫客服協助查詢。
+
+有其他需要幫忙的嗎？",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],tracking 沒更新，轉真人並推薦穩定款,我可以帮您处理这个问题。请问您的电子邮箱是？,human_handover,[],,False,"['R-2', 'R-5']"
+[],會員點數怎麼用？同時幫我找 JTCG-LAPTOP-VESA-KIT,"會員點數可以在結帳時抵用，且不得折換現金。有效期限與使用規則以會員中心公告為準。
+
+至於 JTCG-LAPTOP-VESA-KIT，目前我無法直接搜尋此商品，建議您可以在我們的官網配件區域查找，或提供更多資訊讓我協助您。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],請問客服電話？另外 32 吋 100x100 有沒有推薦,"您好，我們的客服電話是請您提供您的聯絡資訊，我們將會協助您。  
+另外，關於32吋100x100的螢幕，建議選擇支援VESA 75×75或100×100的臂架，並確認螢幕的重量與VESA規格相符。如需更詳細的推薦，請提供螢幕品牌與型號，我們將為您提供適合的選擇。  
+我們的品牌理念是""Better Desk, Better Focus.""，期待幫助您打造更好的工作環境！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],我想更改地址，同時問走線組合內容,您好，您可以在貨品未出貨前由客服協助修改地址。如已出貨，則需取消訂單重新下單。關於走線組合內容，建議沿臂架後側與走線槽固定，並預留轉動餘量，避免拉扯。轉接器與變壓器應避免懸空，以降低接口受力。如需更詳細的建議，請告知您的產品型號。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],能否面交？另外把我訂單列表列出來,抱歉，我無法提供這方面的協助。我主要專注於 JTCG Shop 的服務。我可以協助您進行產品推薦、查詢訂單狀態、回答常見問題，或為您轉接真人客服。,reject_request,[],,False,"['R-1', 'R-5']"
+[],海外退貨流程？也順便轉真人,您好，海外退貨流程如下：線上提出申請 → 包裝回收 → 檢查完成後辦理退款。退款約需7-14個工作天，視支付方式與銀行作業而定。由於我目前無法轉接真人客服，建議您直接聯繫我們的客服專線或線上客服進行詳細協助。謝謝您的理解！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-2']
+[],我想要到貨通知，同時比較兩款雙臂,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,False,['R-5']
+[],保固一年嗎？另外 u_222222 的訂單 ETA？,您好，所有臂架與支架類商品享有1年有限保固，非人為損壞可申請檢測與維修。至於 u_222222 的訂單 ETA，建議您可於「我的訂單」頁面點擊追蹤碼查看最新配送狀態。如需更詳細協助，請提供訂單編號。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],請問免運，還有推薦一款壁掛,"我們目前提供免運服務，請確認您的訂單符合免運條件。  
+至於壁掛推薦，建議安裝於磚牆或實心牆面，若為石膏板則需使用專用膨脹螺絲或請專業安裝。  
+如果您需要具體產品建議，請告知您的螢幕尺寸與VESA規格，我可以幫您推薦適合的壁掛架。  
+
+Explanation:  
+我提供了免運資訊，並根據資料指出壁掛安裝的牆面條件，提醒用戶注意安裝安全。由於沒有特定產品資訊，我建議用戶提供更多細節，以便我能更精確地推薦產品。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],invoice 可以重發嗎？另外幫我看有沒有 200x100 支援的臂,我可以帮您处理这个请求。请问您的用户ID是多少？,order_info,[],,False,['R-5']
+[],"human agent please, also what’s your shipping fee?",I can transfer you. What is your email?,human_handover,[],,False,['R-5']
+[],connect to agent and list my recent orders.,I can transfer you. What is your email?,human_handover,[],,False,['R-1']
+[],我要取消訂單與詢問退款時程,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],我想查訂單，並問是否支援 Google Pay,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,False,['R-5']
+[],桌後有擋板能裝嗎？順便推薦短臂,"可以裝擋板，請提供擋板的尺寸或型號，以便確認兼容性。  
+另外，推薦的短臂有：  
+- [JTCG 單臂支架 Lite（至27吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)，適合小型和輕量螢幕。  
+
+若需要更重型或超寬螢幕的短臂，還有[超寬螢幕重載支架（至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。",product_search,[],,True,[]
+[],請告訴我出貨時程與保固條款重點,"出貨時程：現貨商品於1-2個工作天出貨，預購商品則依照頁面標示的時程安排。  
+保固條款重點：臂架與支架類商品享有1年有限保固，非人為損壞可申請檢測與維修，需提供訂單編號或發票資訊。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+[],客服時段？還有 JTCG-ARM-ULTRAWIDE-49 相容性,"客服時段為週一至週五 09:30 – 18:00（國定假日除外）。關於 JTCG-ARM-ULTRAWIDE-49 的相容性，建議您提供更多詳細資訊或聯絡客服協助確認。  
+
+我們的客服在工作時段內會盡快回覆您的詢問，若遇尖峰時段，請留下您的Email，我們會盡快聯繫您。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],查詢 JTCG-202507-30021，同時想知道可以直立旋轉嗎,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,True,[]
+[],我想詢問贈品補寄，同時比較單臂/氣壓臂,"您好，關於贈品補寄，建議您聯繫客服提供訂單資訊，我們會協助您處理。  
+至於單臂與氣壓臂的比較，氣壓臂的張力可以微調，安裝附贈六角扳手，調整後螢幕能穩定停在常用高度。單臂設計則較為簡單，適合不同需求。  
+如果需要更詳細的資訊或協助，請隨時告知！  
+""Better Desk, Better Focus.""",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],Do you have wall mount? Also check my tracking.,"Yes, we have wall mount options available. You can check out the JTCG Wall Mount for 34-inch screens [here](https://example.com/jtcg/p/JTCG-WALL-ARM-34). 
+
+Regarding your tracking, I don't have access to tracking information directly. Please check your order confirmation email or visit our website's order tracking page for the latest updates.",product_search,[],,False,['R-1']
+[],請幫我轉真人，同時設定到貨通知,您好，我可以協助您。請問您的電子郵件地址是？,human_handover,[],,False,['R-1']
+[],我想問優惠券能否併用，還要看訂單列表,優惠券每筆訂單限使用一張，且不得與部分專案或企業報價合併使用。是否可以併用，還需參考您的訂單內容和活動公告。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],退貨需要原包裝嗎？另外推薦 16 吋筆電托盤,退貨時建議保留原包裝，以方便退貨處理。至於16吋筆電托盤，建議您參考我們的產品內容物與安裝工具資訊，選擇符合您的螢幕尺寸與VESA規格的款式。如需更詳細的推薦，請提供您的需求或偏好。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],想了解 RMA 表單，同時查 u_555555 最新訂單,您好，關於 RMA 表單，您可以在線上提交，請備妥訂單編號與故障影片或照片，客服會在工作日內回覆檢測與處理方式。至於最新訂單，請您提供您的訂單編號或帳號，我可以協助您查詢。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],我有兩台 27 吋要混搭，順便問免運門檻,您好，您可以混搭兩台27吋螢幕，建議選擇重量相近的螢幕以利平衡，並調整雙臂張力以確保穩定。至於免運門檻，請提供您的購物車內容，我可以幫您確認。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],付款失敗怎麼辦？也看看我上一筆訂單狀態,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],請提供發票下載位置，並推薦走線配件,"您好，發票可以在會員中心補發下載。如需更改抬頭或統編，請在下單時填寫，若遺漏，請於出貨前聯繫客服協助。
+
+關於走線配件，我們目前沒有具體推薦，建議您根據您的需求選擇適合的走線管理產品，保持桌面整潔，提升專注力。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],壁掛需要什麼牆體？也請轉真人諮詢,我可以帮您处理这个问题。请问您的电子邮件地址是？,human_handover,[],,True,[]
+[],請問隱私政策，另外轉真人處理發票抬頭,您好，關於您的問題，請參考我們的隱私政策，詳細內容可以在我們的網站上找到。若需更改發票抬頭，請在下單時填寫，若遺漏，請於出貨前聯繫客服協助。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-2', 'R-4']"
+[],能給我客服時間嗎？以及 27 吋單臂對比表,我們的客服時間是週一至週五，上午9點至下午6點。關於27吋單臂的比較表，請參考我們的產品資訊，建議選擇符合VESA規格且承重適合您的螢幕。若需要更詳細的比較，請提供您的需求，我可以協助您找到適合的產品。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],我要看訂單清單，並問 49 吋是否太重,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],發票改抬頭可以嗎？同時列出我的 order_id,您好，我可以協助您。請問您的用戶ID是什麼？,order_info,[],,True,[]
+[],我想問安裝時間，要 20 分鐘內能完成的款式，順便看運費,"我們的現貨商品通常在1-2個工作天出貨，運費滿NT$1,500免運，離島或外島另計。至於安裝服務，特定地區提供到府安裝，費用另計。請提供您的地區和商品資訊，我可以幫您確認是否有符合20分鐘內安裝的款式。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],桌深 60cm 夠嗎？另外查一下配送進度,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],預購會分批出貨嗎？也幫我推薦超寬臂,"預購商品會依照頁面標示的時程分批出貨，若同一訂單包含現貨與預購商品，則可能會採取分批出貨。運費計算與是否合併則以結帳頁為準。
+
+至於超寬臂架，建議選擇支援VESA 75×75或100×100規格的臂架，並搭配強化背板以確保穩定性。請確認螢幕的淨重與相容性，以選擇適合的臂架。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],你們支援 LINE Pay 嗎？同時查最新訂單,您好，我可以協助您。請問您的用戶ID是什麼？,order_info,[],,False,['R-5']
+[],是否支援 Apple Pay？另外 VESA 轉接板哪款,您好，JTCG Shop 支援 Apple Pay。至於 VESA 轉接板，我們建議搭配支持 VESA 75×75 或 100×100 的臂架使用，部分超寬螢幕可能需要專用轉接板。請確認您的螢幕背板規格以選擇合適的轉接板。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-3', 'R-4']"
+[],請轉真人，同時幫我估重量是否合適,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,False,['R-5']
+[],I need invoice reissue and a mount suggestion.,您好！我可以協助您重新開立電子發票，請提供您的訂單編號或相關資訊。此外，關於支架的建議，請告知您的使用需求或偏好，我將為您提供適合的產品建議。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],查詢購買紀錄，另外比較雙臂承重差異,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是？,order_info,[],,False,['R-5']
+[],客服表單連結？同時推薦壁掛與桌夾差異,"您好，請點擊此連結以進入客服表單：[客服表單連結](https://example.com/customer-service-form)。  
+
+關於壁掛與桌夾的差異：  
+壁掛通常適合需要固定在牆面上的空間，節省桌面空間，適合較大或較重的裝置；而桌夾則方便放置於桌面邊緣，易於調整位置，適合需要經常變動位置的使用者。  
+
+我們的品牌理念是 ""Better Desk, Better Focus.""，希望能幫助您打造更好的工作環境！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],有沒有 USB hub 的臂？順便查 u_333333 訂單,"我們有幾款USB hub的臂可以選擇，包括：
+- [JTCG 雙螢幕氣壓臂 Pro（支持至 32 吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)
+- [JTCG 單臂支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)
+- [JTCG 超寬螢幕重載臂（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)
+
+請點擊連結查看詳細資訊或選擇適合您的款式。
+
+至於您的訂單 u_333333，抱歉，我目前無法直接查詢訂單資訊。建議您可以登入會員帳號或聯繫我們的客服獲取詳細資料。",product_search,[],,False,['R-1']
+[],退貨與換貨差別？另外有沒有現貨資訊,退貨是指將已購買的商品退回並獲得退款，而換貨則是將商品更換為相同或不同的商品。關於現貨資訊，您可以在商品頁點選「到貨通知我」來獲取補貨通知，實際購買以結帳成功為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],能否改用穿孔固定？也給我我的訂單列表,您好，我可以協助您。請問您的用戶ID是什麼？,order_info,[],,True,[]
+[],請問兒童安全注意事項，順便推薦穩定款,建議避免兒童攀爬或懸掛在螢幕臂上，並定期檢查螺絲鎖固狀況。為增加穩定性，您可以選擇我們的穩定款螢幕臂，並加裝保護墊片以避免桌面刮傷。若需要更詳細的產品推薦，請告知您的需求！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],黑貓配送多久？同時问有没有分期,黑貓配送時間會依照商品的出貨狀況而定，預購商品會依照頁面標示的到貨時程，若同一單含現貨與預購商品，可能會採分批出貨。至於分期付款，JTCG Shop 支援信用卡（VISA / Master / JCB）、Apple Pay、Google Pay 和 LINE Pay，部分銀行提供3、6、12期分期，實際手續費與門檻請以結帳頁提示為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],I want to cancel and also get a recommendation.,"I'm sorry, I can't help with that. My focus is on our JTCG Shop products. I can assist with product recommendations, order status, FAQs, or connecting you to human support.",reject_request,[],,False,"['R-1', 'R-5']"
+[],Can you track my order and tell me return policy?,I can help with that. What is your user_id?,order_info,[],,False,['R-5']
+[],轉真人處理 RMA，同時想看壁掛指南,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,False,"['R-4', 'R-5']"
+[],user_id u_empty，還有推薦入門款嗎？,"您好！我們推薦幾款入門級的支架選擇，包括：
+- [JTCG 單臂支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)，適合小型與輕量螢幕。
+- [JTCG 超寬螢幕重載支架（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)，適合較大螢幕。
+
+這些款式都適合入門使用，且價格較親民。需要更詳細資訊或其他建議，請告知！",product_search,[],,True,[]
+[],退款進度多久？同時產品相容性請告訴我,退款作業約需7至14個工作天，具體時間依支付方式與銀行作業而定。關於產品相容性，請提供您所關心的產品型號或詳細資訊，我將協助您確認。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],客服是否週末有？也幫我設定到貨通知,您好，目前客服服務時間為週一至週五 09:30 – 18:00，週末暫不提供線上客服。至於到貨通知，您可以在商品頁點選「到貨通知我」，系統會在補貨後以Email通知您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+[],我要查 JTCG-202508-15083，順便問 49 吋是否支援 200x100,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,True,[]
+[],這款支架會刮桌嗎？另請查我的配送,這款支架不會刮桌，因為它設計有防刮墊，保護您的桌面。至於您的配送狀況，請提供您的訂單編號，我可以幫您查詢最新的配送資訊。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],發票丟了怎麼辦？也想轉真人,抱歉，我無法提供這方面的協助。我主要專注於 JTCG Shop 的服務。我可以協助您進行產品推薦、查詢訂單狀態、回答常見問題，或為您轉接真人客服。,reject_request,[],,False,"['R-2', 'R-5']"
+[],請給價格保護說明，並推薦替代品,"您好，關於價格保護，我們的政策是若商品在短期內調降價格，可能會提供補差，並以活動頁公告為準。不同活動檔期可能不適用價格保護。  
+
+如果您需要替代品推薦，請告知您的需求，我可以為您提供相關建議。  
+
+我們的品牌理念是「Better Desk, Better Focus」，希望幫助您打造更好的工作環境！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],運費怎麼算？同時比較兩款單臂價格,"運費計算以結帳頁面為準，滿 NT$1,500免運，離島或外島運費另計。請提供您想比較的兩款單臂，我可以幫您查詢價格。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],海外購買保固可用嗎？順便看我的訂單,您好！我可以帮您处理相关事宜。请问您的用户ID是？,order_info,[],,True,[]
+[],我想升級到雙臂，同時查一下 ETA,您可以选择升级到我们的双臂气压支架，例如[JTCG 双臂气压支架 Pro（支持至32寸）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。预计到货时间请提供您的收货地址，我可以帮您查询具体的ETA。,product_search,[],,True,[]
+[],桌子是玻璃，推薦方案並查最近訂單,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],請列我的 order_id，還要問客服時間,您好，我可以協助您。請問您的 user_id 是什麼？,order_info,[],,True,[]
+[],配送卡在處理中，請轉真人並推薦短臂,我可以協助您。請問您的電子郵件是什麼？,human_handover,[],,True,[]
+[],想問優惠券規則，另外這支臂可直立？,"優惠券規則：每筆訂單限用一張優惠券，且不得與部分專案或企業報價合併使用。活動期間與適用品項請以頁面公告為準。
+
+臂是否可直立：根據氣壓臂張力調整說明，您可以透過附贈的六角扳手微調張力，使螢幕穩定停在所需高度，包括直立位置。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],請問保固登錄流程，與是否可轉讓？,保固登錄通常限原始購買者，且不一定可轉讓。部分商品提供線上保固登錄，詳細請參考商品頁或憑證說明。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-3', 'R-4']"
+[],能否看走線教學，同時查 tracking 碼,您好，您可以參考我們的走線管理與配線建議，了解如何整理線路，並且可以在「我的訂單」頁面查看您的物流追蹤碼。若需要更詳細的教學或追蹤協助，請提供您的訂單編號，我將為您查詢。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+[],貨到時可加購安裝嗎？並列出訂單清單,您好，我可以帮您处理相关事宜。请问您的用户编号是？,order_info,[],,True,[]
+[],請問是否可面交，若不行推薦最快到貨的款式,您好，目前我們不提供面交服務。若想要最快到貨的商品，建議您可以選擇現貨商品，並在商品頁點選「到貨通知我」，系統會在補貨後以Email通知您。實際購買以結帳成功為準。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],我想查配送，同時問 VESA 75×75 相容,您好，我可以協助您。請問您的用戶ID是什麼？,order_info,[],,False,['R-5']
+[],退货流程+商品推荐（简体）,"您好，关于退货流程，您可以在线提出申请，包装商品后寄回，我们会在收到商品后进行检查，完成后办理退款，退款时间约为7-14个工作天。商品需保持全新、完整包装与配件，非瑕疵退换货可能需自行承担运费。
+
+关于商品推荐，请告诉我您的需求或偏好，我可以为您提供合适的商品建议。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+[],查询订单+转人工（简体）,我可以帮忙。请问您的电子邮箱是？,human_handover,[],,False,['R-1']
+[],Compare two mounts and cancel my latest order.,I can help with that. What is your user_id?,order_info,[],,True,[]
+[],客服时段+是否支持Apple Pay（简体）,我们的客服时段为周一至周五 09:30 – 18:00（国定假日除外）。我们支持Apple Pay作为支付方式。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問你們的退換貨政策是什麼？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""JTCG Shop 提供 7 天鑑賞期；商品需保持全新且包裝配件完整，非瑕疵退換可能需自行負擔運費。需要我貼上政策頁連結嗎？""}]}]",好，請給我政策連結,您可以參考我們的退換貨政策詳情，請點擊以下連結：[退換貨政策](https://example.com/return-policy)（請自行替換為實際網址）。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""保固多久？要怎麼申請維修？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""臂架類商品享 1 年有限保固，申請維修時請準備訂單編號與故障照片/影片，我可提供線上申請表單連結。要現在申請嗎？""}]}]",先給我表單連結就好,請點擊以下連結提交您的保固申請與維修 RMA 表單：[保固申請與維修流程](https://example.com/rma-form),faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""發票可以開三聯式嗎？結帳時要填什麼？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以三聯；請在下單時填寫統編與抬頭。出貨後會寄電子發票，也可在會員中心下載。需要教學連結嗎？""}]}]",需要，謝謝,"您好，您可以參考我們的教學連結：  
+[發票與開立方式教學](https://www.jtcgshop.com/knowledge-base/invoice-instructions)  
+在下單時，請在備註欄填寫您的統編與抬頭，若需要三聯式發票，請特別註明。出貨後，電子發票會寄送至您的Email或可在會員中心下載。如需協助，請隨時聯繫我們！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""一般出貨要幾天？有沒有免運門檻？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""現貨 1–2 個工作天出貨；滿 NT$1,500 免運（離島另計）。要幫你確認某商品是否現貨嗎？""}]}]",想查 JTCG-ARM-DUAL-PRO-32 是否現貨,我可以帮您处理这个请求。请问您的用户ID是多少？,order_info,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""VESA 100x100 的 27 吋螢幕，有推薦的單臂嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可參考「JTCG 單臂支架 Lite（至 27 吋）」；支援 75x75/100x100，適合輕量螢幕。要我貼商品頁嗎？""}]}]",貼連結給我,推薦您可以參考這款 JTCG 單臂支架 Lite（至 27 吋），支援 VESA 100x100，適合您的螢幕。詳情請點擊連結：[JTCG 單臂支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""桌板厚 85mm 可以用夾具嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""多數夾具支援約 10–85mm；若材質為玻璃或軟木，建議加墊片或使用穿孔固定。需要安裝指南嗎？""}]}]",請給我指南,根據我們的資料，夾具適用於桌板厚度在10至85mm之間。若您的桌板厚度為85mm，理論上可以使用夾具，但請確保夾具的深度和固定範圍符合您的桌面材質和厚度。若桌面為玻璃或軟木，建議加墊片或改用穿孔固定方式。需要更詳細的安裝步驟嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-5', 'R-4']"
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我要轉真人客服，謝謝""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""為協助轉接真人客服，請提供可聯絡的 Email（例如 name@example.com）。""}]}]",my.mail+test@demo.com,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""human agent please""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""To connect you to a human agent, please provide a valid email address (e.g., name@example.com).""}]}]",user@example.com,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""connect to agent""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""Please share your email so I can transfer you to a human agent.""}]}]",john.doe@sample.org,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""34 吋曲面螢幕要選哪支臂？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可考慮「超寬螢幕重載臂（至 49 吋）」；承重與 VESA 相容性較充足。需不需要確認你的螢幕重量？""}]}]",重量大概 8 公斤,建議您選擇JTCG 超寬螢幕重載臂（至 49 吋），承重範圍為5-18公斤，適合您的8公斤螢幕，且支援VESA 100x100或200x100。您可以點擊[這裡](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)了解詳情。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""49 吋超寬螢幕有支援的重載臂嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""有，型號「JTCG 超寬螢幕重載臂（至 49 吋）」支援 100x100/200x100 VESA。要商品頁連結嗎？""}]}]",給我連結,您可以參考這款超寬螢幕重載臂，支援至49吋，並具有100x100和200x100的VESA支援。請點擊以下連結了解詳情：[JTCG 超寬螢幕重載臂（至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。,product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想壁掛，哪個比較適合？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可參考「壁掛式伸縮臂（至 34 吋）」；請確認牆面可承重並使用對應膨脹螺絲。需要牆體條件說明嗎？""}]}]",牆面是石膏板，行嗎？,用於石膏板牆面壁掛，建議使用專為輕隔間設計的膨脹螺絲，並請專業安裝以確保安全。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""有沒有筆電托盤可以裝在臂架上？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""有，「筆電托盤＋VESA 轉接組」可搭配支援 VESA 的臂架使用，適用 11–16 吋筆電。需要連結嗎？""}]}]",好，貼上來,您可以參考這款 [JTCG 筆電托盤＋VESA 轉接組](https://example.com/jtcg/p/JTCG-LAPTOP-VESA-KIT)，它可以搭配支援 VESA 的臂架使用，適用於 75x75 和 100x100 的 VESA 規格，最大支援 16 吋筆電。需要幫忙選擇合適的臂架嗎？,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""走線管理套件你們有賣嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""有，商品為「桌面走線管理組」。可協助整理臂架與桌下線材。要看內容物清單嗎？""}]}]",內容物有哪些？,走線管理套件的內容物包括臂架本體、夾具/穿孔配件、六角扳手，以及VESA螺絲組（型號依商品而異）。需要我幫您查詢更詳細的商品資訊嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以用 Apple Pay 或 LINE Pay 付款嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""支援信用卡、Apple Pay、Google Pay、LINE Pay；部分銀行有 3/6/12 期分期，依結帳頁為準。要我帶你到付款說明嗎？""}]}]",帶我看看付款說明,JTCG Shop 支援信用卡（VISA / Master / JCB）、Apple Pay、Google Pay、LINE Pay。部分銀行提供3、6、12期分期，實際手續費與門檻請以結帳頁為準。需要更詳細的說明嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""海外可以寄新加坡嗎？運費怎麼算？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""主要配送台灣本島；海外配送可先讓客服評估可行方案與費用。需要我幫你轉真人評估嗎？""}]}]",好，那轉真人吧,我可以帮您处理这个问题。请问您的电子邮件地址是？,human_handover,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""缺貨可以設定到貨通知嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，在商品頁點選「到貨通知我」，補貨後會以 Email 通知。要我協助你找到該商品頁嗎？""}]}]",請幫我找 JTCG-ARM-SINGLE-LITE-27,"您搜尋的商品 JTCG-ARM-SINGLE-LITE-27 已找到，請點擊以下連結查看詳情與購買選項：
+[JTCG 單臂支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)
+
+如果需要其他協助，請告訴我！",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""有提供到府安裝嗎？台北地區""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""部分地區提供到府安裝（由合作廠商執行），費用依地區與難度另計。我可以先幫你留下聯絡資料給客服嗎？""}]}]",先不用，我想看價目,我們的價格資訊較為詳細，建議您可以瀏覽我們的官網或直接聯絡客服獲取最新的價格表。需要我幫您提供相關連結嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""夾具跟穿孔固定哪個比較穩？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""穿孔固定穩定度較高；夾具免鑽孔、安裝快。若桌板材質特殊或很厚，建議選穿孔。需要比較文章嗎？""}]}]",貼比較文章,根據資料，穿孔固定較穩定，適合較厚或特殊材質的桌板；夾具則安裝方便，免鑽孔，適合較薄或普通材質的桌面。選擇時可根據桌板材質與厚度來決定。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""螢幕 6 公斤可以用哪款臂架？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""6 公斤多數單臂可支援；若要更順暢建議選氣壓臂。你偏好單臂還是雙臂？""}]}]",單臂就好,建議您可以考慮JTCG單臂支架，例如[這款Lite（適用於27吋以下螢幕，重量1-6公斤）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)。它適合您的需求，且支援重量範圍內的螢幕。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""氣壓臂張力要怎麼調整才會停在我要的高度？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""使用附贈六角扳手微調；順時針/逆時針調整張力，讓螢幕能穩定停住。要看圖解指南嗎？""}]}]",請給我圖解,"請參考以下圖解指南：  
+安裝後，使用附贈的六角扳手，順時針或逆時針微調氣壓臂的張力，讓螢幕能穩定停在你想要的高度。建議逐步調整，避免一次轉動過多圈。  
+
+如果需要詳細圖示，可以參考我們的安裝指南或影片，或提供您的聯絡方式，我們可以協助您找到相關資源。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""如果我的螢幕沒有 VESA 孔可以怎麼裝？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可用 VESA 轉接板或筆電托盤，需確認尺寸與負重。要我推薦轉接方案嗎？""}]}]",推薦給我,建議您可以搭配 VESA 轉接板或筆電托盤類配件，請確認轉接板的負重與尺寸範圍。需要我幫您推薦適合的轉接板嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,"['R-4', 'R-5']"
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""家裡有小孩，臂架安全要注意什麼？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議加裝桌面保護墊片、避免孩童攀掛、定期檢查螺絲鎖固與走線。要安全清單給你嗎？""}]}]",好，給清單,"以下是臂架安全注意事項清單：
+1. 建議加裝桌面保護墊片，避免桌面刮傷。
+2. 請避免孩童攀爬或懸掛螢幕臂。
+3. 定期檢查螺絲鎖固狀況，確保穩固。
+4. 安裝時若需穿孔，請準備電鑽與量尺，並依照說明操作。
+5. 定期檢查關節與螺絲是否鬆動，並適度調整。
+
+這樣可以幫助確保使用安全與臂架的穩定性。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""壁掛安裝對牆體有什麼要求？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議磚牆或實心牆；若石膏板需對應膨脹螺絲或專業安裝。要參考壁掛指南嗎？""}]}]",給我指南連結,請參考我們的壁掛安裝指南：[壁掛安裝指南](https://www.jtcgshop.com/knowledge-base/壁掛-安裝-需注意-的-牆體-條件)。這份指南詳細說明了牆體的選擇與安裝注意事項。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""RMA 要怎麼申請？要哪些資料？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請提供訂單編號與故障照片/影片，線上表單填寫後，客服會回覆處理時程。要我送你到 RMA 表單嗎？""}]}]",是的，謝謝,您好，請您提供訂單編號與故障照片或影片，並於線上表單提交 RMA 申請。客服會在工作日內與您聯繫，安排檢測與維修。需要我幫您連結申請表嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""電子發票可以重發或改抬頭嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可在會員中心補發下載；抬頭/統編需於下單時填寫，若遺漏請在出貨前聯繫客服協助。需要操作步驟嗎？""}]}]",請給步驟,請您先登入會員中心，進入「我的發票」頁面，找到需要補發的電子發票，點選下載即可。如需修改抬頭，請在下單時填寫正確資訊，若遺漏請於出貨前聯繫客服協助。需要我提供詳細操作步驟嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""公司大量採購可以談專案報價嗎？學校也可以嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，企業/學校均可評估專案報價與安裝服務。要留下需求數量與地點給我們嗎？""}]}]",我要先拿一份聯絡表,您好，請提供您的聯絡資訊，我們將寄送聯絡表給您。您可以提供您的Email或聯絡方式嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""退貨流程跟退款大概多久會完成？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""退貨：提出申請→回收→檢查→退款，通常約 7–14 個工作天（依支付方式與銀行作業）。要我提供申請入口嗎？""}]}]",好，給我入口,您可以透過我們的退貨申請入口進行操作。請點擊以下連結：[退貨申請入口](https://www.jtcgshop.com/return)（請根據實際網址調整）。若需要協助，隨時告訴我！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""要怎麼查物流追蹤？我想確認包裹在哪裡。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""出貨後可在「我的訂單」點擊追蹤碼查看。要我幫你查訂單嗎？若要，請先提供 user_id。""}]}]",我的 user_id 是 u_123456,請提供您想查詢的訂單編號，或告訴我您想追蹤的商品是哪一筆訂單。,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""會員點數要怎麼用？會過期嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""點數可於結帳抵用，無法折現；效期與規則以會員中心公告為準。要我帶你看說明頁嗎？""}]}]",好的，謝謝,不客氣！如果還有其他問題，隨時告訴我喔。,general_response,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""臂架平常應該怎麼保養清潔？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""以微濕布擦拭，避免溶劑；定期檢查關節與螺絲，必要時小幅調整。要保養指南嗎？""}]}]",給我指南連結,您可以參考我們的保養與清潔建議，詳細內容請點擊這裡：[臂架保養與清潔建議](https://www.jtcgshop.com/knowledge-base/臂架-保養-與-清潔建議)。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""桌深與牆距要留多少比較好？我怕臂展不夠。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""一般建議桌深至少 60cm，後方保留 10–15cm 利於走線與活動。需要我幫你比對特定型號臂展嗎？""}]}]",幫我比對 32 吋用的款式,"對於32吋螢幕，建議使用JTCG雙臂氣壓支架（JTCG ARM DUAL PRO 32），其最大支援尺寸為32吋，並且適用於VESA75x75或100x100。臂展和桌面深度建議保持在10-85mm之間，以確保穩定與活動空間。  
+詳情請參考[產品連結](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""走線有推薦的整理方式嗎？常被拉扯。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可沿臂後側與走線槽固定，預留轉動餘量；轉接器與變壓器避免懸空。要走線指南嗎？""}]}]",提供指南，謝謝,建議沿臂架後側與走線槽固定，預留轉動餘量，避免拉扯。轉接器與變壓器應避免懸空，以降低接口受力。需要更詳細的步驟嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""贈品漏寄可以補寄嗎？需要什麼資料？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請於 7 日內提供訂單編號與開箱照片，我們會協助補寄。要我給你申請入口嗎？""}]}]",好，謝謝,不客氣！如果還有其他問題，隨時告訴我。祝您有美好的一天！,general_response,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""VESA 螺絲要用多長、多大規格？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""多數為 M4（約 10–14mm）；大型螢幕可能用到 M6/M8，請以螢幕原廠手冊為準。需要螺絲指引嗎？""}]}]",請提供指引,多數螢幕的VESA螺絲規格為M4，長度約10-14mm。大型或電競螢幕可能使用M6或M8。建議以螢幕原廠手冊為準，避免螺絲過長壓壞機板。如需更詳細指引，請提供您的螢幕型號，我們將協助您確認。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以搭配電動升降桌嗎？升降時會不會拉到線？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，建議預留 10–15cm 線材餘量並固定走線，避免升降拉扯。需要走線示意圖嗎？""}]}]",需要，謝謝,建議沿臂架後側與走線槽固定線材，預留10-15cm餘量，並避免變壓器懸空，以降低拉扯風險。如需詳細圖示，請參考我們的走線管理建議。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""桌後有擋板，夾具還能用嗎？要注意什麼？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請確認夾持深度與高度是否足夠；若干涉可改穿孔或加延伸固定片。要我幫你評估尺寸嗎？""}]}]",擋板高度約 60mm,若擋板高度約60mm，建議確認夾具的夾持深度與高度是否足夠，並避免干涉。若有干涉，建議改用穿孔固定或加裝延伸固定片。需要我幫你確認夾具的適用範圍嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""雙螢幕不同尺寸能混搭嗎？會不會歪？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可混搭，建議重量相近並分別調整各臂張力即可。要張力調整教學嗎？""}]}]",好，給我教學,"調整氣壓臂張力的方法如下：  
+1. 使用附贈的六角扳手。  
+2. 順時針轉動會增加張力，逆時針轉動會減少張力。  
+3. 逐步轉動，每次轉動不要過多圈，調整到適合的穩定位置即可。  
+
+這樣可以確保螢幕穩定且不會歪斜。需要更詳細的步驟嗎？",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""包裝裡會附什麼？需要自備哪些工具？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""標配含臂架、夾具/穿孔配件、六角扳手與 VESA 螺絲；穿孔安裝可能需自備電鑽。要開箱清單嗎？""}]}]",請提供清單,包裝內容物包括臂架本體、夾具/穿孔配件、六角扳手與 VESA 螺絲組（型號依商品而異）。穿孔安裝可能需要自備電鑽與量尺。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""剛收到外箱破損，還有零件少了，怎麼處理？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請拍照外箱與內容物，於 7 日內連同訂單編號回報，我們會協助補件或售後處理。需要申請頁面嗎？""}]}]",要，謝謝,請立即拍攝外箱與內容物的照片，並在7日內連同訂單編號回報客服，我們會協助更換缺件或安排售後處理。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""下單後可以改地址或換商品嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""未出貨前可協助修改；若已入出貨流程，可能需取消重下。要我幫你確認訂單狀態嗎？提供 user_id 即可。""}]}]",user_id 是 u_999999,您的訂單尚未出貨，若需修改地址或商品，請提供詳細需求，我將協助您處理。,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想取消訂單並退款，可以嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""未出貨可取消；已出貨需走退貨流程。退款約 7–14 個工作天。要我協助提交取消嗎？""}]}]",先查狀態再決定,您好，我可以協助您。請問您的 user_id 是多少？,order_info,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""預購品會不會跟現貨分開寄？運費怎算？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可能分批出貨；運費與是否合併以結帳頁為準。需要我幫你看該商品頁的說明嗎？""}]}]",好，麻煩,預購商品會依照頁面標示的時程出貨，若同一單含現貨與預購商品，可能會分批出貨。運費計算與是否合併以結帳頁為準。如需詳細資訊，請參考我們的出貨與運費說明。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""保固需要另外登錄嗎？可以轉移給下一位買家嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""部分商品可線上登錄；保固通常限原始購買者，不隨轉售轉移。要登錄頁面嗎？""}]}]",給我看登錄頁,您可以在我們的商品頁或憑證上找到相關的保固登錄資訊。請提供您的商品或訂單編號，我可以協助您查詢是否可以線上登錄。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""臂架有異音，該怎麼排除？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""先檢查螺絲鎖付與走線干涉；必要時在關節轉點少量潤滑。要保養/異音指南嗎？""}]}]",是，請給我,建議檢查螺絲鎖付與走線是否干涉，若異音明顯，於關節轉點施以少量潤滑（勿沾染面板）。若需要詳細排除步驟或潤滑建議，請隨時告知！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-5']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以單買螺絲或轉接板嗎？在哪裡找？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可於配件館選購；若找不到對應零件，請提供 SKU 與需求給客服協助。要我幫你找配件頁嗎？""}]}]",幫我找一下,您好，配件館提供螺絲組、轉接板等常用耗材的單獨購買。如需特定零件，請提供 SKU 與需求，我們將協助您。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""剛買就降價會補差嗎？條件是什麼？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""是否補差依活動頁公告；不同檔期可能不適用價格保護。需要價格政策連結嗎？""}]}]",需要,請參考我們的價格保護政策，詳細內容可以點擊這裡：[價格保護與調降補差](https://example.com/price-protection)。不同活動檔期可能不適用價格保護，建議在購買前確認相關規定。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""你們會怎麼使用我提供的 Email？會拿去行銷嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""Email 僅用於本次服務聯繫與訂單通知，不做行銷用途。更多可見隱私權政策。要載點嗎？""}]}]",好，給我,您的Email僅用於本次服務聯繫與訂單通知，不做行銷用途。如需詳細資訊，請參考我們的隱私權政策。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我要查訂單狀態，幫我看一下最近那筆。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""沒問題，請先提供 user_id，我會先列出你的訂單供選擇要查哪一筆。""}]}]",u_333333,您的最新訂單是 JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋），下單日期為2025年8月14日。請問需要查詢詳細狀態嗎？,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""幫我查配送進度，我有追蹤碼嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""我可以幫你查，請先提供 user_id；列出訂單後你再指定 order_id，我就能提供追蹤資訊。""}]}]",user_id u_444444,請提供您的訂單編號（order_id），我將為您查詢配送進度。,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""查訂單 JTCG-202508-10001 的明細內容。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""為保護資料，我會先列出你的訂單讓你指認。請先提供 user_id，我再帶你選擇對應的 order_id。""}]}]",我的 user_id 是 u_123456,"您的訂單 JTCG-202508-10001 目前處於運輸中，預計於 2025-08-16 送達。內容包括：
+- JTCG 雙螢幕氣壓臂 Pro（支援至 32 吋）x1
+- JTCG 桌面走線管理組x1
+
+您可以點擊[此連結](https://example.com/jtcg/o/JTCG-202508-10001)查看詳細資訊或追蹤包裹。",order_info,[<ToolName.GET_ORDER_DETAILS: 'get_order_details'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""想看我的訂單列表。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""好的，請提供 user_id，我會列出你的 order_id 清單供你選擇查詢。""}]}]",u_empty,您好，您目前沒有訂單記錄。如需協助，請隨時告知！,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""在線客服還有營業嗎？今天可以聊嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""線上客服時段為週一至週五 09:30–18:00（國定假日除外）。若需要轉真人，請提供 Email。""}]}]",那先給我轉真人吧,我可以帮您处理这个问题。请问您的电子邮箱是？,human_handover,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""service hours for support?""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""Our live support hours are Mon–Fri 09:30–18:00 (Taiwan time). If you need a human agent, please provide your email.""}]}]","ok, john@acme.co","Our support hours are Monday to Friday, 09:30–18:00 (Taiwan time). We will respond to your email as soon as possible during these hours.",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請推薦 32 吋可用的單臂款式，桌深 60cm。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可參考「單臂支架 Lite（至 27 吋）」若螢幕較輕；或重視流暢度可選氣壓臂款。你的螢幕重量大約幾公斤？""}]}]",大約 4.5 公斤,WORKFLOW_ERROR: 'desk_min_mm',ERROR,ERROR,,False,['R-5']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我要雙螢幕加筆電托盤一起用，怎麼搭比較好？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可用「雙螢幕氣壓臂 Pro」搭配「筆電托盤＋VESA 轉接組」。要我把兩個商品頁都給你嗎？""}]}]",好，兩個都給,"建議搭配「JTCG雙螢幕氣壓臂Pro（支持至32吋）」與「JTCG筆電托盤＋VESA轉接組」，這樣可以方便你同時使用雙螢幕與筆電。你可以點擊以下連結了解商品詳情：
+- 雙螢幕氣壓臂Pro：[點我看商品](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)
+- 筆電托盤＋VESA轉接組：[點我看商品](https://example.com/jtcg/p/JTCG-LAPTOP-VESA-KIT)
+
+需要我幫你搭配組合或提供其他建議嗎？",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""VESA 200x100 的螢幕可以用你們哪款？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""「超寬螢幕重載臂（至 49 吋）」支援 200x100。要我確認你的螢幕重量是否在承重範圍嗎？""}]}]",重量 10 公斤內,我們推薦您使用「JTCG 超寬螢幕重載臂（至 49 吋）」（SKU: JTCG-ARM-ULTRAWIDE-49），它支援 VESA 200x100，且適合重量在10公斤內的螢幕。您可以在此連結查看更多資訊：[點此查看](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我的桌子是玻璃材質，夾具會不會壓裂？有什麼建議？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""玻璃桌建議加墊片或改穿孔固定（需專業評估）。也可考慮壁掛方案。要我給你比較資料嗎？""}]}]",給我比較資料,根據資料，玻璃桌建議使用墊片或改用穿孔固定方式，以降低壓裂風險。壁掛方案則需評估牆體承重，建議安裝於磚牆或實心牆面，若為石膏板則需使用專用膨脹螺絲或請專業安裝。若需要更詳細比較，請告訴我！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""安裝大概要花多久時間？我有工具。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""一般 20–40 分鐘可完成（依桌面/走線複雜度而異）。要我提供安裝步驟與注意事項嗎？""}]}]",好，給我步驟,"安裝步驟如下：
+1. 準備工具：六角扳手（已附贈）及可能需要的電鑽與量尺（自備）。
+2. 取出包裝內容物，包括臂架本體、夾具/穿孔配件、VESA螺絲組。
+3. 根據您的桌面或牆面選擇安裝方式：
+   - 桌面安裝：將臂架固定在桌面邊緣，使用夾具並調整緊固。
+   - 壁掛安裝：在牆面打孔（需評估牆體承重，建議實心牆或磚牆，石膏板需特殊膨脹螺絲），然後固定臂架。
+4. 安裝氣壓臂：將螢幕連接到臂架，並用六角扳手微調張力，確保穩定。
+5. 完成後，調整螢幕位置至理想高度與角度。
+
+如需更詳細的說明或協助，請隨時告知！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""付款失敗怎麼辦？可以重試嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可先確認卡片/網路狀況並重試；仍失敗可改用其他支付或聯繫客服協助。需要支付說明頁嗎？""}]}]",先給我說明頁,"您可以參考我們的付款說明頁，內容涵蓋信用卡、Apple Pay、Google Pay、LINE Pay等支付方式，以及分期付款資訊。請點擊以下連結查看詳細說明： [付款方式與分期](https://example.com/付款方式與分期)。
+如果需要進一步協助，請隨時告知！",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以面交嗎？我住台北市區。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""目前以宅配為主，無提供面交。若有時程需求可告訴我，我幫你參考出貨時程。""}]}]",那最快何時能到？,出貨後，通常需1-2個工作天，若為現貨商品，最快可在此時間內到達。您可以在「我的訂單」頁面追蹤最新配送狀態。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""想了解優惠券使用規則與限制。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""每筆訂單限用一張，且部分專案/企業報價不適用；活動期間與適用品項以頁面公告為準。要活動總覽嗎？""}]}]",好的,我們的優惠券每筆訂單限用一張，且不適用於部分專案或企業報價。活動期間與適用品項以頁面公告為準。如需詳細規則，請參考我們的優惠券與活動使用規則。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我要變更發票抬頭，出貨前可以改嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可於出貨前由客服協助修改。要我幫你轉真人處理嗎？若要，請提供 Email。""}]}]",ok，email 是 finance@corp.tw,您好！我可以帮您处理相关事宜。请问您的用户编号（user_id）是多少？,order_info,[],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""客服聯絡方式是什麼？有信箱嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可透過線上客服表單或指定信箱聯繫；我也能幫你轉真人協助。需要我先轉接嗎？""}]}]",先不用，給我表單就好,您可以透過我們的線上客服服務時段（週一至週五 09:30 – 18:00）留下您的Email，我們會盡快回覆您。若需要立即協助，請提供您的聯絡資訊，我可以幫您轉接。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""退款大概多久會到帳？信用卡支付""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""退款約 7–14 個工作天，實際依銀行作業為準。需要退貨/取消流程連結嗎？""}]}]",好，請提供,退款流程詳情請參考我們的退貨與退款說明，約需 7–14 個工作天，依銀行作業時間而定。您可以在我們的網站找到完整流程說明。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""How to track my order status on your site?""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""Go to “My Orders” and click the tracking code. If you want me to check, please provide your user_id and then choose an order_id.""}]}]",user_id is u_555555,"Your recent orders are:
+1. Order ID: JTCG-202508-01041, placed on August 1, 2025
+2. Order ID: JTCG-202507-28052, placed on July 28, 2025
+
+Please visit “My Orders” on our site to view the current status and tracking details for each order.",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""Do you ship internationally? I’m in Japan.""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""We mainly ship within Taiwan. For overseas shipping, we can escalate to a human agent to evaluate options—share your email if you’d like me to transfer you.""}]}]",okay: jpbuyer@mail.jp,"We mainly ship within Taiwan. For international shipping to Japan, we can escalate your request to a human agent. Please expect a follow-up email at jpbuyer@mail.jp for further assistance.",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""Need invoice reissue, lost the email.""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""You can re-download the e-invoice in your account after shipment. If you need help, I can transfer you—please share your email.""}]}]",send to billing@xyz.com,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""请问这款支架支持75×75吗？（简体）""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""支持，JTCG 多数臂架兼容 75×75 与 100×100。需要我给你对应型号的链接吗？（简体）""}]}]",给链接（简体）,您可以参考我们的VESA相容支架，支持75×75规格。具体型号请访问我们的官网或联系客服获取链接。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""退货政策是什么？（简体）""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""提供 7 天鉴赏期，商品需保持全新与配件完整；非瑕疵退换可能需自行承担运费。需要政策页面吗？（简体）""}]}]",要（简体）,退货政策：提供7天鉴赏期，商品需保持全新、完整包装与配件。非瑕疵退换货可能需自行承担运费。如需详细政策页面，请访问我们的官网。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""发票怎么开？能填公司抬头吗？（简体）""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以三联电子发票；下单时填写税号与抬头。出货后会寄送邮件且可在会员中心下载。（简体）""}]}]",好（简体）,感谢您的确认！如果有其他问题，随时联系我们。祝您购物愉快！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""有没有49寸显示器可用的重载臂？（简体）""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""有，推荐“超宽显示器重载臂（至49寸）”，支持100×100/200×100 VESA。（简体）""}]}]",给我商品链接（简体）,推荐JTCG超宽显示器重载臂（至49寸），支持100×100和200×100 VESA接口。您可以在这里查看详情和购买：[商品链接](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我要查询订单（简体）""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""请先提供 user_id，我会列出你的订单编号供你选择要查询的订单。（简体）""}]}]",user_id u_222222（简体）,"您的订单如下：
+1. 订单编号：JTCG-202508-12005，日期：2025-08-12，商品：JTCG 超宽屏幕重载臂（至 49 吋）
+2. 订单编号：JTCG-202506-05077，日期：2025-06-05，商品：JTCG 单臂支架 Lite（至 27 吋）
+
+请告诉我您想查询的具体订单或需要其他帮助。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""客服時段是幾點到幾點？假日有嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""週一至週五 09:30–18:00，國定假日休息。如需轉真人，請提供 Email。""}]}]",那我留 email：help@me.com,您的 Email 將用於聯繫與訂單通知，並不做行銷用途。如需進一步協助，請隨時告知！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""離島運費如何計算？會比較久嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""離島/外島運費與時程將於結帳頁顯示，通常較本島久一些。要我幫你估算某品項嗎？""}]}]",不用，先知道規則就好,了解，運費規則會在結帳頁顯示，離島/外島運費另計，運送時間可能較久。如需詳細資訊，隨時告知！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""螢幕 8 公斤，VESA 100x100，推薦哪款單臂？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議選擇氣壓臂款以保留調整餘裕；如需更穩可考慮重載臂。要我比對兩款差異嗎？""}]}]",比對給我,"根據您的需求，推薦以下兩款單臂：
+
+1. [JTCG 單臂支架 Lite（適用於27吋以下，最大負重6公斤）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)，適合較輕的螢幕，但負重較低，若您的螢幕較重，可能不適用。
+
+2. 若您的螢幕重達8公斤，建議選擇 [JTCG 壁掛式升降臂（最大負重12公斤）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)，可承重較重的螢幕，且適合VESA 100x100。
+
+請確認您的螢幕重量與使用需求，選擇最適合的款式。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我有兩台 27 吋要左右並排，哪個雙臂適合？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""「雙螢幕氣壓臂 Pro（至 32 吋）」適合並排，且支援 VESA 75/100。要商品頁嗎？""}]}]",要,您可以考慮JTCG雙螢幕氣壓臂Pro（至32吋），適合左右並排，支援VESA 75/100，最大支援32吋螢幕。請點擊以下連結查看更多資訊：[商品連結](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請直接幫我轉真人，問題很多不想打字了。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""了解，請提供可聯絡的 Email，我會立即為你轉接真人客服。""}]}]",c@d.cc,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想比較雙臂與壁掛的差異，你建議哪個？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""桌面彈性高→雙臂；節省桌面並有牆面條件→壁掛。看你是否能鑽牆與承重條件。要比較文章嗎？""}]}]",請給比較文章,"以下是相關比較文章：
+1. [多螢幕不同尺寸是否可混搭](https://example.com/article1) - 介紹雙臂螢幕的混搭與平衡調整。
+2. [壁掛安裝需注意的牆體條件](https://example.com/article2) - 說明壁掛安裝的牆面條件與承重評估。
+3. [夾具 vs 穿孔固定差異](https://example.com/article3) - 比較不同安裝方式的優缺點。
+
+這些文章可以幫助你更了解雙臂與壁掛的差異與選擇建議。",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""活動優惠怎麼用？可以和企業報價一起用嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""每單限一張券，且多數專案或企業報價不併用。以活動頁公告為準。要我傳活動頁嗎？""}]}]",好,了解！如果需要任何其他協助，隨時告訴我。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想看訂單列表再決定要查哪一筆配送。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請提供 user_id，我會先列出你的 order_id 清單，之後你再指定要查的一筆。""}]}]",u_555555,"以下是您的訂單列表：
+1. JTCG-202508-01041（2025-08-01，雙螢幕氣壓臂 Pro）
+2. JTCG-202507-28052（2025-07-28，桌面走線管理組）
+
+請告訴我您想查詢的訂單編號。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""這款臂架支援 USB 集線嗎？我想桌面少拉幾條線。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""目前多數臂架無內建 USB Hub，可搭配走線管理或外接集線器。要我推薦走線配件嗎？""}]}]",好，推薦我,建議沿臂架後側使用走線槽固定，並預留轉動餘量，避免拉扯。配件方面，您可以在我們的配件館選購走線配件或收納用品。如需協助提供具體產品，請告知您的需求。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問 JTCG-ARM-DUAL-PRO-32 的 VESA 支援哪些？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""支援 75x75、100x100。若螢幕較重或超寬建議加強背板。需要商品頁嗎？""}]}]",好，給我,請參考商品頁面，您可以點選「到貨通知我」來獲得補貨通知。若需要商品頁連結，請稍候我為您提供。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請幫我查訂單配送，剛剛下單沒多久。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""我可以協助，請先提供 user_id；列出訂單後你再回覆要查的 order_id。""}]}]",user_id u_222222,您的最新訂單是 JTCG 超寬螢幕重載臂（至 49 吋），於 2025-08-12 下單。目前尚在處理中，請稍候，我會持續追蹤並通知您最新狀況。,order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我需要客服打電話給我，直接轉真人就好。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，請提供可聯絡的 Email（僅用於此次服務），確認後我立刻轉接真人客服。""}]}]",contact@home.tw,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""臂架可不可以直立旋轉 90 度？我要直立顯示器。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""多數款式支援 ±90° 旋轉；請確認你的螢幕重量與 VESA。要我列幾款支援直立的型號嗎？""}]}]",列給我,"以下是支援直立旋轉90度的臂架推薦：
+1. [JTCG 雙臂氣壓臂 Pro（支援至32吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)
+2. [JTCG 單臂支架 Lite（支援至27吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)
+3. [JTCG 超寬螢幕重載臂（支援至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)
+
+這些產品都支持螢幕的直立旋轉，請依照您的螢幕尺寸與需求選擇。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問客服表單在哪？我有安裝的問題想問。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""我可以提供線上客服表單連結；也可直接轉真人，請提供 Email。你偏好哪種？""}]}]",先表單就好,您可以透過我們的線上客服服務時段（週一至週五 09:30 – 18:00）使用客服表單，遇到尖峰時段也可留下 Email，我們會盡快回覆。請參考我們的客服聯絡與服務時段資訊。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想用 LINE Pay，有回饋嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""是否有回饋依活動公告與付款頁提示為準；我可以帶你看付款說明或活動頁。要哪個？""}]}]",活動頁,請參考我們的活動頁，了解LINE Pay的相關回饋資訊。您可以在活動頁上找到詳細的優惠內容與條款。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""海外退貨可以嗎？流程會很複雜嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""需先由客服評估與協助安排，流程時間依物流而異。我可轉真人協助，請提供 Email。""}]}]",ok，我的 email 是 r@o.cc,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""幫我比較一下兩款雙螢幕支架的差別，重視穩定度。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""在穩定度上，氣壓臂調整流暢、承重餘裕佳；壁掛則最穩但需牆面條件。你更傾向桌夾還是壁掛？""}]}]",桌夾就好,"以下是桌夾型雙螢幕支架的推薦選擇：
+
+1. [JTCG 單臂支架 Lite（適用至27吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)  
+- 重點：輕巧穩定，適合較輕的螢幕，承重1-6kg，適合小型或輕量螢幕。
+
+2. [JTCG 雙臂氣壓支架 Pro（適用至32吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)  
+- 重點：雙臂設計，承重較高（2-9kg），支撐較重螢幕，穩定性佳。
+
+3. [JTCG 超寬重載支架（適用至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)  
+- 重點：超大螢幕專用，承重較高（5-18kg），適合大型螢幕，穩定性更佳。
+
+若重視穩定度，建議選擇承重較高、設計較為堅固的雙臂或超寬重載款式。",product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想先看訂單 ID，再指定要查哪一筆。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""收到，請提供 user_id，我會列出你的 order_id 清單供你選擇。""}]}]",u_777777,"您的訂單ID如下：
+1. JTCG-202505-21073（2025-05-21，壁掛式伸縮臂）
+2. JTCG-202508-15083（2025-08-15，超寬螢幕重載臂）
+
+請告訴我您想查詢的訂單ID。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""桌面空間小，臂架會不會卡到牆？有什麼建議配置？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議桌深≥60cm、後方留 10–15cm；可選伸縮臂或縮短臂展配置。要我依你的螢幕尺寸給配置建議嗎？""}]}]",螢幕 27 吋,對於27吋螢幕，建議桌深≥60cm，並在後方留出10–15cm空間。若空間有限，可選擇可伸縮的臂架，並調整臂展以避免卡到牆。需要我幫你推薦適合的臂架配置嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問可否貨到付款？我不想刷卡。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""目前以信用卡與電子支付為主，貨到付款暫不提供。要我提供可用的支付方式列表嗎？""}]}]",提供列表,目前我們的支付方式包括信用卡（VISA、Master、JCB）、Apple Pay、Google Pay 和 LINE Pay。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""客服可以直接打電話給我嗎？不用 email。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""我可以協助轉真人，但需要你提供有效 Email 作為聯繫依據，再由客服與你安排。請提供 Email。""}]}]",phoneonly@noemail,轉接真人時發生錯誤，請聯繫技術團隊協助,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,"['R-2', 'R-5']"
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我不確定要買哪款，你可以問我幾個問題幫我選嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""當然可以！請先告訴我：螢幕尺寸/重量、VESA 規格、是否要雙螢幕、桌板材質與厚度？""}]}]",27 吋、約 4.5 公斤、100x100、單螢幕、木桌 30mm,WORKFLOW_ERROR: 'desk_min_mm',ERROR,ERROR,,False,['R-5']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想買 JTCG-LAPTOP-VESA-KIT，能搭配哪些臂架？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""任何支援 75x75/100x100 VESA 的臂架都能搭配；要我推薦單臂與雙臂各一款嗎？""}]}]",好，各一款,"推薦一款單臂： [JTCG 超寬臂重載（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)，支援100x100和200x100 VESA，適合較大螢幕。  
+另一款是牆壁安裝的 [JTCG 壁掛式升降臂（至 34 吋）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)，支援75x75和100x100 VESA，適合較小空間使用。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問走線管理組合裡面有托盤嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""組合含走線套管、束線帶與桌下托盤。要我貼商品頁給你嗎？""}]}]",貼上來,抱歉，資料中未提及走線管理組合是否包含托盤。建議您可以直接詢問賣場客服或查看商品詳細資訊。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想追蹤訂單，但忘了編號怎麼辦？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""沒關係，你提供 user_id，我會列出你的 order_id 清單，之後你再指定要查的一筆。""}]}]",user_id = u_333333,"您的訂單有以下兩筆：
+1. JTCG-202508-14011，購買日期：2025-08-14，商品：雙螢幕氣壓臂 Pro
+2. JTCG-202507-30021，購買日期：2025-07-30，商品：壁掛式伸縮臂
+
+請告訴我您想追蹤的訂單編號。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我剛剛付款失敗，怕重複扣款，怎麼確認？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議稍後重新整理訂單頁並留意銀行通知；若有疑慮可提供 user_id，我協助查看訂單狀態或轉客服協助。""}]}]",我先等等看,好的，請隨時聯繫我們若有任何問題或需要協助。祝您順利！,general_response,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以提供到貨通知的步驟嗎？我怕搶不到貨。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""在商品頁點「到貨通知我」，登入後填寫 Email 即可。要我直接帶你到該商品頁嗎？""}]}]",帶我去 JTCG-ARM-ULTRAWIDE-49,請點擊商品頁的「到貨通知我」按鈕，登入後填寫您的 Email 即可。需要我帶你到該商品頁嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想先問問品牌保固條款，太長不想看全文。可以摘要嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""重點：臂架 1 年有限保固；非人為損壞可送檢維修；申請需訂單或發票資訊。要完整條款連結嗎？""}]}]",有需要再說，謝謝,您好，臂架與支架類商品享有1年有限保固。非人為損壞可申請檢測與維修，需提供訂單編號或發票資訊。如需其他資訊，請隨時告知！,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想直接看雙臂商品清單前三名就好，簡單比較即可。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，我會列出 3 款並說明關鍵差異與連結。先說你的螢幕尺寸與 VESA 規格？""}]}]",27 吋，100x100,"以下是雙臂商品的前三名，適用於27吋、VESA 100x100：
+
+1. [JTCG 雙臂氣壓臂 Pro（支持至32吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)  
+   - 特點：適合較大螢幕，支援至32吋，強化背板建議使用。
+
+2. [JTCG 單臂支架 Lite（至27吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)  
+   - 特點：適合小型輕量螢幕，空間有限的使用者。
+
+3. [JTCG 超寬螢幕重載臂（至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)  
+   - 特點：適用於超寬螢幕，建議重負荷與較大尺寸。
+
+這些商品都符合您的尺寸與VESA規格，建議根據螢幕重量與使用需求選擇。",product_search,[],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請幫我轉真人，出貨一直沒更新，很著急。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""理解你的狀況，為了轉接真人客服，請提供可聯絡的 Email（例如 name@example.com）。""}]}]",urgent@now.me,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""想問一下，臂架可承重 18 公斤的是哪款？有嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""重載需求可看「超寬螢幕重載臂（至 49 吋）」；承重區間約 5–18 kg。要我貼商品頁嗎？""}]}]",貼上,我們有一款符合您需求的臂架：JTCG 超級寬螢幕重載臂（至 49 吋），承重範圍為 5-18 公斤。您可以參考以下連結了解詳情：[點此查看](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想把客服轉給真人（human agent），謝謝。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""沒問題，請提供你的 Email，我就會為你轉接真人客服。""}]}]",me@hello.world,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""能不能給我壁掛臂的伸縮距離資訊？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""壁掛式伸縮臂伸展約 500mm，請確認牆面材質與承重。需要商品頁與安裝指南嗎？""}]}]",兩個都要,"我們有兩款壁掛臂供您選擇：
+
+1. [JTCG 壁掛式伸縮臂（至34吋）](https://example.com/jtcg/p/JTCG-WALL-ARM-34)，伸展距離約500mm，適用於牆面承重較重的裝置，建議使用於牆面較堅固的環境。
+
+2. [JTCG 超寬屏重載臂（至49吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)，最大伸展距離較大，適合較重或超寬螢幕，建議確認牆面承重能力。
+
+需要進一步的安裝指南或其他協助嗎？",product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""如果我今天下單，最快什麼時候會出貨？台北市""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""現貨一般 1–2 個工作天出貨；實際依倉別與物流排程。要我幫你確認某個 SKU 的現貨狀態嗎？""}]}]",JTCG-ARM-DUAL-PRO-32,我查詢了JTCG-ARM-DUAL-PRO-32的出貨資訊，通常現貨商品會在1-2個工作天內出貨。實際出貨時間會依倉庫與物流安排而定。需要我幫你確認訂單狀況嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""需要我先提供什麼資訊，你才查得到我的訂單？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請提供 user_id。我會列出你的 order_id 清單，你再指定要查的一筆即可。""}]}]",user id 是 u_123456,"您的訂單包括：
+1. JTCG-202508-10001（2025-08-10）- 雙螢幕氣壓臂 Pro
+2. JTCG-202507-09012（2025-07-22）- 單臂支架 Lite
+
+請告訴我您想查詢的訂單編號。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請推薦我桌面很小、需要靠牆的配置，用單臂或壁掛都行。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""若可鑽牆，壁掛最省空間；若不行，可選短臂或小行程單臂並預留 10–15cm 牆距。你偏好哪一種？""}]}]",先看壁掛,我推薦您可以考慮 JTCG 壁掛式單臂（型號：JTCG-WALL-ARM-34），適用於最大 34 吋螢幕，承重 2-12 公斤，並支援 VESA 75x75 和 100x100。詳情請點擊[這裡](https://example.com/jtcg/p/JTCG-WALL-ARM-34)。,product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想用英文問問題，ok 嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""Sure—feel free to ask in English, and I’ll reply in English as well.""}]}]","What mounts fit a 32"" 100x100 monitor?","For a 32"" monitor with a 100x100 VESA mount, we recommend the JTCG Dual Gas Spring Monitor Arm Pro (supporting up to 32 inches). You can find it [here](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32).",product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""單臂與氣壓臂差在哪？我在意調整順暢度。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""氣壓臂調整更順、可懸停；機械單臂較基本但穩定。若常調整高度，建議選氣壓臂。要看範例款式嗎？""}]}]",好，給我,"建議您可以參考這兩款：  
+- [JTCG 氣壓臂 Pro（支持至32吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)，調整順暢且懸停方便。  
+- [JTCG 單臂支架 Lite（至27吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)，適合小型螢幕，調整較簡單。  
+
+氣壓臂調整更順暢且懸停穩定，適合經常調整高度的需求。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""如果我要把筆電也掛起來，會不會太重？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請確認臂架承重範圍與托盤重量；多數氣壓臂可支援一般筆電重量。你的筆電約幾公斤？""}]}]",大概 1.6 公斤,"根據資料，JTCG單臂支架Lite（適用於最大27吋、重量1-6公斤的筆電）可以支援你的1.6公斤筆電。請確認你的桌面厚度在10-70mm之間，並且選擇適合的VESA配件以確保穩固。  
+詳情請參考[產品連結](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)。",product_search,[],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想看之前所有訂單的 order_id 清單。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""請提供 user_id，我會列出你的 order_id 清單，你再指定要查的那一筆。""}]}]",u_222222,"您的訂單ID清單如下：
+1. JTCG-202508-12005
+2. JTCG-202506-05077
+
+請告訴我您想查詢的訂單詳細資訊。",order_info,[<ToolName.GET_ORDER_BY_USER: 'get_order_by_user'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""桌板只有 15mm，夾具會穩嗎？需要加強嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""15mm 可用，多數夾具支援；建議加保護墊片並確認夾持力道。若不安心可改穿孔固定。要安裝建議嗎？""}]}]",給建議,建議可直接使用夾具，但請確認夾持深度與桌面厚度（15mm）相符，並加裝墊片以增加穩定性。如需更穩固，建議改用穿孔固定或加裝延伸固定片。若有特殊需求，歡迎提供詳細情況，我們可以協助您選擇最適方案。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想讓螢幕垂直擺放做程式開發，哪款支援旋轉？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""多數臂架支援 ±90° 旋轉；以 27–32 吋常見。要我列出支持旋轉的推薦清單嗎？""}]}]",列出來,"以下是支持旋轉的螢幕臂推薦：
+
+1. [JTCG 雙臂氣壓臂 Pro（支援至 32 吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)
+2. [JTCG 單臂支架 Lite（支援至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)
+
+這些產品都支援螢幕旋轉，適合程式開發使用。需要更多資訊或協助選擇嗎？",product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想直接看重載臂，請挑一支最穩的給我。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議「超寬螢幕重載臂（至 49 吋）」；承重與相容性較佳。要商品頁與安裝注意事項嗎？""}]}]",兩個都要,"我推薦「JTCG 超寬螢幕重載臂（至 49 吋）」以及「JTCG 筆電托盤+VESA 轉接套件」來滿足您的需求。請點擊以下連結查看詳細資訊：
+- [超寬螢幕重載臂](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)
+- [筆電托盤+VESA 轉接套件](https://example.com/jtcg/p/JTCG-LAPTOP-VESA-KIT)
+
+這兩款產品都能提供穩定的支撐與良好的兼容性。需要我幫您搭配購買或提供安裝建議嗎？",product_search,[],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""可以把客服轉真人嗎？我想談企業採購方案。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""沒問題，請提供你的 Email，我會把需求轉交專人聯繫你。""}]}]",corp@school.edu.tw,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""商品頁寫免運，結帳還是顯示運費，是不是離島不適用？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""免運門檻適用本島；離島/外島運費另計，以結帳頁顯示為準。需要我幫你確認地址類別嗎？""}]}]",不用了，我知道了,"了解，感謝您的確認！如果有其他問題，隨時歡迎聯繫我們。  
+Remember, ""Better Desk, Better Focus.""",faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,True,[]
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""你可以幫我查「JTCG-202507-30021」的訂單細節嗎？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，請先提供 user_id，我會列出你的 order_id 清單讓你指認，之後再提供該筆詳情。""}]}]",我的 user_id 是 u_333333,您的訂單 JTCG-202507-30021 已於2025年7月30日下單，並於2025年8月3日由T-EX快遞送達，追蹤碼為TEX445566。訂購的商品為JTCG壁掛式伸縮臂（至34吋），送貨地址為台中市北屯區松竹路二段120號6樓。如需更多資訊，請點擊[此連結](https://example.com/jtcg/o/JTCG-202507-30021)。,order_info,[<ToolName.GET_ORDER_DETAILS: 'get_order_details'>],,False,['R-1']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""如果要申請 RMA，你們會來收件嗎？還是我自己寄？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""流程由客服提供指示，依情況安排收件或自行寄回。要我提供 RMA 申請入口嗎？""}]}]",好，提供,請您於線上表單提交 RMA 申請，並備妥訂單編號與故障影片或照片。客服會在工作日內回覆檢測與處理方式。需要我提供連結嗎？,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問我能不能看 3 個最推薦的單臂款式就好？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""可以，我會根據你的尺寸/重量/用途列 3 款。先告訴我螢幕尺寸與重量？""}]}]",32 吋，5 公斤左右,"以下是我為你推薦的三款單臂支架：
+
+1. [JTCG 雙臂氣壓臂 Pro（支持至 32 吋）](https://example.com/jtcg/p/JTCG-ARM-DUAL-PRO-32)  
+2. [JTCG 超寬屏重載臂（至 49 吋）](https://example.com/jtcg/p/JTCG-ARM-ULTRAWIDE-49)  
+3. [JTCG 單臂支架 Lite（至 27 吋）](https://example.com/jtcg/p/JTCG-ARM-SINGLE-LITE-27)  
+
+這些款式都適合你的螢幕尺寸與重量需求。",product_search,[],,False,['R-3']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""我想知道你們是否有客服電話？想直接講。""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""你可以先提供 Email，我把你的需求轉給真人客服，會再安排合適的聯繫方式與時間。""}]}]",mail@me.io,已為您轉接真人,human_handover,[<ToolName.CREATE_SUPPORT_TICKET: 'create_support_ticket'>],,False,['R-2']
+"[{""role"": ""user"", ""content"": [{""type"": ""text"", ""text"": ""請問桌面常移動位置，臂架需要鎖得很緊嗎？會不會刮桌？""}]}, {""role"": ""assistant"", ""content"": [{""type"": ""text"", ""text"": ""建議使用保護墊片並適度鎖緊；搬動前先鬆開再重新固定可避免刮傷。要保護建議清單嗎？""}]}]",好，給清單,建議在臂架與桌面接觸處加裝保護墊片，並在搬動前先鬆開螺絲，搬動後再重新鎖緊，以避免刮傷桌面。,faq,[<ToolName.SEARCH_KNOWLEDGE_BASE: 'search_knowldge_base'>],,False,['R-4']

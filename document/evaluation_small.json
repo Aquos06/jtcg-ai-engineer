@@ -1,0 +1,296 @@
+[
+    [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"請幫我轉真人，出貨一直沒更新，很著急。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"理解你的狀況，為了轉接真人客服，請提供可聯絡的 Email（例如 name@example.com）。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"urgent@now.me"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"想問一下，臂架可承重 18 公斤的是哪款？有嗎？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"重載需求可看「超寬螢幕重載臂（至 49 吋）」；承重區間約 5–18 kg。要我貼商品頁嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"貼上"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想把客服轉給真人（human agent），謝謝。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"沒問題，請提供你的 Email，我就會為你轉接真人客服。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"me@hello.world"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"能不能給我壁掛臂的伸縮距離資訊？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"壁掛式伸縮臂伸展約 500mm，請確認牆面材質與承重。需要商品頁與安裝指南嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"兩個都要"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"如果我今天下單，最快什麼時候會出貨？台北市"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"現貨一般 1–2 個工作天出貨；實際依倉別與物流排程。要我幫你確認某個 SKU 的現貨狀態嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"JTCG-ARM-DUAL-PRO-32"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"需要我先提供什麼資訊，你才查得到我的訂單？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"請提供 user_id。我會列出你的 order_id 清單，你再指定要查的一筆即可。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"user id 是 u_123456"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"請推薦我桌面很小、需要靠牆的配置，用單臂或壁掛都行。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"若可鑽牆，壁掛最省空間；若不行，可選短臂或小行程單臂並預留 10–15cm 牆距。你偏好哪一種？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"先看壁掛"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想用英文問問題，ok 嗎？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"Sure—feel free to ask in English, and I’ll reply in English as well."}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"What mounts fit a 32\" 100x100 monitor?"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"單臂與氣壓臂差在哪？我在意調整順暢度。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"氣壓臂調整更順、可懸停；機械單臂較基本但穩定。若常調整高度，建議選氣壓臂。要看範例款式嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"好，給我"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"如果我要把筆電也掛起來，會不會太重？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"請確認臂架承重範圍與托盤重量；多數氣壓臂可支援一般筆電重量。你的筆電約幾公斤？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"大概 1.6 公斤"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想看之前所有訂單的 order_id 清單。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"請提供 user_id，我會列出你的 order_id 清單，你再指定要查的那一筆。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"u_222222"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"桌板只有 15mm，夾具會穩嗎？需要加強嗎？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"15mm 可用，多數夾具支援；建議加保護墊片並確認夾持力道。若不安心可改穿孔固定。要安裝建議嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"給建議"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想讓螢幕垂直擺放做程式開發，哪款支援旋轉？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"多數臂架支援 ±90° 旋轉；以 27–32 吋常見。要我列出支持旋轉的推薦清單嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"列出來"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想直接看重載臂，請挑一支最穩的給我。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"建議「超寬螢幕重載臂（至 49 吋）」；承重與相容性較佳。要商品頁與安裝注意事項嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"兩個都要"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"可以把客服轉真人嗎？我想談企業採購方案。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"沒問題，請提供你的 Email，我會把需求轉交專人聯繫你。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"corp@school.edu.tw"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"商品頁寫免運，結帳還是顯示運費，是不是離島不適用？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"免運門檻適用本島；離島/外島運費另計，以結帳頁顯示為準。需要我幫你確認地址類別嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"不用了，我知道了"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"你可以幫我查「JTCG-202507-30021」的訂單細節嗎？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"可以，請先提供 user_id，我會列出你的 order_id 清單讓你指認，之後再提供該筆詳情。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我的 user_id 是 u_333333"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"如果要申請 RMA，你們會來收件嗎？還是我自己寄？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"流程由客服提供指示，依情況安排收件或自行寄回。要我提供 RMA 申請入口嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"好，提供"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"請問我能不能看 3 個最推薦的單臂款式就好？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"可以，我會根據你的尺寸/重量/用途列 3 款。先告訴我螢幕尺寸與重量？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"32 吋，5 公斤左右"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"我想知道你們是否有客服電話？想直接講。"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"你可以先提供 Email，我把你的需求轉給真人客服，會再安排合適的聯繫方式與時間。"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"mail@me.io"}]
+    }
+  ],
+  [
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"請問桌面常移動位置，臂架需要鎖得很緊嗎？會不會刮桌？"}]
+    },
+    {
+      "role":"assistant",
+      "content":[{"type":"text","text":"建議使用保護墊片並適度鎖緊；搬動前先鬆開再重新固定可避免刮傷。要保護建議清單嗎？"}]
+    },
+    {
+      "role":"user",
+      "content":[{"type":"text","text":"好，給清單"}]
+    }
+  ]
+]
