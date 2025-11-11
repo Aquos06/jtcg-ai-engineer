@@ -81,6 +81,7 @@ Notes:
 - this number caculated using AI Evaluation, so by asking a big model of LLM to judge wether the output is good or not.
 - the number seems low, because when i see to the detail, the LLM miss-judge. Even so, we can still use this as a reference.
 - the best case is to have the golden data for the evaluation data, so that we can perfectly calculate the accuracy~
+- the evaluation code is in the evaluation folder. [evaluation/reability_eval.py]
 
 ---
 
