@@ -69,14 +69,18 @@ I developed and evaluated two distinct agent architectures to fulfill the CRM Ag
 
 To test both, I ran an automated evaluation against a 323-item test set. The results presented a fascinating paradox: **the "simpler" `AUTO` agent performed slightly better on this specific test.**
 
-#### Evaluation Data (Accuracy)
+#### Evaluation Data (Accuracy) [AI Evaluation]
 
 | Model | `AUTO` (ReAct) | `INTENT` (Workflow) |
 | :--- | :---: | :---: |
 | **GPT-4o-mini** | **65.94%** | 63.16% |
 | **GPT-4o-nano** | **58.51%** | 56.97% |
 
-[Notes: this result can be seen in 'output/reliability_results_agent_intent_*.csv']
+Notes: 
+- this result can be seen in 'output/reliability_results_agent_intent_*.csv'
+- this number caculated using AI Evaluation, so by asking a big model of LLM to judge wether the output is good or not.
+- the number seems low, because when i see to the detail, the LLM miss-judge. Even so, we can still use this as a reference.
+- the best case is to have the golden data for the evaluation data, so that we can perfectly calculate the accuracy~
 
 ---
 
